@@ -496,7 +496,123 @@ a {
   margin-top: 18px;
 }
 
-/* ENTRADAS */
+/*ENTRADAS NEW*/
+
+.tickets-section {
+  padding: 90px 0;
+  background: radial-gradient(circle at top, rgba(255, 180, 80, 0.12), transparent 35%),
+              #080b18;
+  color: #fff;
+}
+
+.tickets-intro {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.ticket-card {
+  position: relative;
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.28);
+}
+
+.ticket-featured {
+  border-color: rgba(255, 190, 90, 0.7);
+  background: linear-gradient(180deg, rgba(255,190,90,0.18), rgba(255,255,255,0.07));
+}
+
+.ticket-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 190, 90, 0.18);
+  color: #ffd28a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ticket-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.35rem;
+}
+
+.ticket-price {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.ticket-price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+}
+
+.ticket-total {
+  margin: 8px 0 22px;
+  color: rgba(255,255,255,0.68);
+}
+
+.ticket-card ul {
+  margin: 0 0 26px;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.8);
+}
+
+.ticket-card li {
+  margin-bottom: 8px;
+}
+
+.ticket-btn {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: #f6b24b;
+  color: #111;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ticket-btn:hover {
+  transform: translateY(-2px);
+  background: #ffd28a;
+}
+
+@media (max-width: 980px) {
+  .tickets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .tickets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-price {
+    font-size: 2rem;
+  }
+}
+
+/* ENTRADAS 
 
 .tickets-layout {
   align-items: center;
@@ -561,6 +677,7 @@ a {
   border-left-color: var(--gold);
   background: linear-gradient(135deg, rgba(255,209,102,0.18), rgba(255,139,71,0.08));
 }
+  */
 
 /* MAPA */
 
