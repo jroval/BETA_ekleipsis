@@ -1,90 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- 1. Charset siempre primero -->
   <meta charset="UTF-8" />
+
+  <!-- 2. Viewport (una sola vez) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/img/fav_icon.png">
 
-  <title>Ekleipsis Fest 2026 | Festival del Eclipse Total en Gargallo, Teruel</title>
+  <!-- 3. Título (uno solo) -->
+  <title>Ekleipsis Fest 2026 | Eclipse Total de Sol en Gargallo, Teruel</title>
 
-  <meta name="description" content="Ekleipsis Fest 2026: astronomía, música, familia y observación del eclipse total de Sol en Gargallo, Teruel. Del 11 al 13 de agosto de 2026." />
+  <!-- 4. SEO básico -->
+  <meta name="description" content="Vive el eclipse total de Sol del 12 de agosto de 2026 en Ekleipsis Fest. Astronomía, conciertos, camping y experiencias únicas en Gargallo, Teruel." />
+  <meta name="keywords" content="eclipse 2026 España, festival eclipse, Ekleipsis Fest, Gargallo Teruel, eclipse total sol España, festival astronomía, Perseidas 2026" />
+  <meta name="author" content="Ekleipsis Fest" />
+  <meta name="robots" content="index, follow" />
 
+  <!-- 5. Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:url" content="https://ekleipsis.netlify.app/" />
+  <meta property="og:title" content="Ekleipsis Fest 2026 | Eclipse Total en España" />
+  <meta property="og:description" content="Un festival único para vivir el eclipse total de Sol del 12 de agosto de 2026. Música, ciencia y cielo nocturno en Gargallo, Teruel." />
+  <meta property="og:image" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2" />
+  <meta property="og:image:secure_url" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- 6. Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ekleipsis Fest 2026 | Eclipse Total en España" />
+  <meta name="twitter:description" content="Un festival único para vivir el eclipse total de Sol del 12 de agosto de 2026. Música, ciencia y cielo nocturno en Gargallo, Teruel." />
+  <meta name="twitter:image" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2" />
+
+  <!-- 7. Canonical -->
+  <link rel="canonical" href="https://ekleipsis.netlify.app/" />
+
+  <!-- 8. Favicon (uno solo) -->
+  <link rel="icon" type="image/png" href="/assets/img/fav_icon.png" />
+
+  <!-- 9. Google Fonts con preconnect para mejor rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- 10. CSS propio -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- SEO básico -->
-<title>Ekleipsis Fest 2026 | Eclipse Total en Gargallo, Teruel</title>
-
-<meta name="description" content="Vive el eclipse total de Sol del 12 de agosto de 2026 en Ekleipsis Fest. Astronomía, conciertos, camping y experiencias únicas en Gargallo, Teruel.">
-
-<meta name="keywords" content="eclipse 2026 España, festival eclipse, Ekleipsis Fest, Gargallo Teruel, eclipse total sol España, festival astronomía, Perseidas 2026">
-
-<meta name="author" content="Ekleipsis Fest">
-
-<meta name="robots" content="index, follow">
-
-<!-- Responsive -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Ekleipsis Fest 2026 | Eclipse Total en España">
-<meta property="og:description" content="Un festival único para vivir el eclipse total de Sol del 12 de agosto de 2026. Música, ciencia y cielo nocturno en Gargallo, Teruel.">
-
-<meta property="og:image" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2">
-<meta property="og:image:secure_url" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<meta property="og:url" content="https://ekleipsis.netlify.app/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ekleipsis Fest 2026">
-<meta name="twitter:description" content="Eclipse total de Sol, música y astronomía en España.">
-<meta name="twitter:image" content="https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2">
-
-<!-- Favicon -->
-<link rel="icon" href="/assets/img/fav_icon.png" type="image/png">
-
-<!-- Canonical -->
-<link rel="canonical" href="https://ekleipsis.netlify.app/">
-
+  <!-- 11. Schema.org JSON-LD -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "Ekleipsis Fest 2026",
-  "startDate": "2026-08-11",
-  "endDate": "2026-08-13",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "location": {
-    "@type": "Place",
-    "name": "Gargallo, Teruel",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Gargallo",
-      "addressRegion": "Teruel",
-      "addressCountry": "ES"
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Ekleipsis Fest 2026",
+    "startDate": "2026-08-11",
+    "endDate": "2026-08-13",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Gargallo, Teruel",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gargallo",
+        "addressRegion": "Teruel",
+        "addressCountry": "ES"
+      }
+    },
+    "image": ["https://ekleipsis.netlify.app/assets/img/EKLEIPSIS_hero.png"],
+    "description": "Festival de astronomía y música para vivir el eclipse total de Sol del 12 de agosto de 2026 en España.",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ekleipsis Fest"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://ekleipsis.netlify.app/",
+      "price": "80",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01"
     }
-  },
-  "image": [
-    "https://ekleipsis.netlify.app//assets/img/EKLEIPSIS_hero.png"
-  ],
-  "description": "Festival de astronomía y música para vivir el eclipse total de Sol del 12 de agosto de 2026 en España.",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://ekleipsis.netlify.app/",
-    "price": "80",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock"
   }
-}
-</script>
-
+  </script>
 </head>
 
 <body id="top">
