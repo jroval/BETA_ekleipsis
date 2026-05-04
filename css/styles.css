@@ -104,11 +104,22 @@ a {
 
 .header-container {
   width: min(1200px, calc(100% - 40px));
+  position: relative;
   margin: auto;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 20px;
+  }
 }
 
 .logo img {
@@ -189,7 +200,7 @@ a {
 
 .hero-content {
   position: absolute;
-  bottom: 3%;
+  bottom: 6%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -646,16 +657,30 @@ a {
 
 /* Móvil */
 @media (max-width: 600px) {
+  .hero {
+    background: #08080F;
+  }
+
   .hero-img {
-    max-height: none;
-    height: 100svh;
+    height: auto;
     width: 100%;
-    object-fit: cover;
-    object-position: center top;
+    max-height: none;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  .hero-overlay {
+    display: none;
   }
 
   .hero-content {
-    bottom: 5%;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    padding: 20px;
+    background: linear-gradient(180deg, transparent, rgba(8,8,15,0.95));
+    margin-top: -60px;
   }
 
   .hero-actions {
