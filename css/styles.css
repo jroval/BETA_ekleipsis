@@ -1082,15 +1082,23 @@ a {
 
 /* Móvil */
 @media (max-width: 767px) {
+  @media (max-width: 767px) {
   .header-container {
     position: relative;
-    justify-content: center;
+    justify-content: space-between; /* ← clave */
   }
 
-  .menu-toggle {
-    position: absolute;
-    right: 20px;
+  .logo {
+    display: flex;
+    align-items: center;
   }
+    .logo img {
+    height: 42px;
+    }    
+  .menu-toggle {
+    position: static; /* ← importante */
+  }
+}
 
   .hero {
     min-height: 100svh;
