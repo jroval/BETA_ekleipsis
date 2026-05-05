@@ -50,42 +50,59 @@
   <!-- 10. CSS propio -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- 11. Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Ekleipsis Fest 2026",
-    "startDate": "2026-08-11",
-    "endDate": "2026-08-13",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": "Gargallo, Teruel",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gargallo",
-        "addressRegion": "Teruel",
-        "addressCountry": "ES"
-      }
-    },
-    "image": ["https://ekleipsis.netlify.app/assets/img/EKLEIPSIS_hero.png"],
-    "description": "Festival de astronomía y música para vivir el eclipse total de Sol del 12 de agosto de 2026 en España.",
-    "organizer": {
-      "@type": "Organization",
-      "name": "Ekleipsis Fest"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://ekleipsis.netlify.app/",
-      "price": "80",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2026-01-01"
+<!-- 11. Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Ekleipsis Fest 2026",
+  "startDate": "2026-08-11T12:00:00+02:00",
+  "endDate": "2026-08-13T02:00:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Gargallo, Teruel",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gargallo",
+      "addressRegion": "Teruel",
+      "addressCountry": "ES"
     }
+  },
+  "image": [
+    "https://ekleipsis.netlify.app/assets/img/preview.jpg?v=2"
+  ],
+  "description": "Festival de astronomía, música, camping y experiencias para vivir el eclipse total de Sol del 12 de agosto de 2026 en Gargallo, Teruel.",
+  "organizer": {
+    "@type": "Organization",
+    "name": "Ekleipsis Fest",
+    "url": "https://ekleipsis.netlify.app/"
+  },
+  "performer": [
+    {
+      "@type": "PerformingGroup",
+      "name": "Bandas en directo"
+    },
+    {
+      "@type": "PerformingGroup",
+      "name": "DJs invitados"
+    },
+    {
+      "@type": "Person",
+      "name": "Astrónomos invitados"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "url": "https://ekleipsis.netlify.app/",
+    "price": "80",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-01-01T00:00:00+01:00"
   }
-  </script>
+}
+</script>
 </head>
 
 <body id="top">
