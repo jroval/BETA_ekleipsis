@@ -433,6 +433,219 @@ a {
   }
 }
 
+.eclipse-section {
+  position: relative;
+  padding: 110px 6%;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 209, 102, 0.10), transparent 28rem),
+    radial-gradient(circle at 85% 70%, rgba(116, 92, 255, 0.10), transparent 30rem),
+    #08080f;
+  color: #fff;
+  overflow: hidden;
+}
+
+.eclipse-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.eclipse-content {
+  max-width: 590px;
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffd166;
+}
+
+.eclipse-content h2 {
+  margin: 0 0 24px;
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.eclipse-content p {
+  margin: 0 0 18px;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.eclipse-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.eclipse-highlights div {
+  padding: 18px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.eclipse-highlights strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffd166;
+  font-size: 1.35rem;
+}
+
+.eclipse-highlights span {
+  display: block;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.82rem;
+}
+
+.eclipse-map-card {
+  position: relative;
+  padding: 18px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.035));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 0 5px 1px rgba(255, 255, 255, 0.22),
+    0 28px 70px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(14px);
+}
+
+.map-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 6px 4px 16px;
+}
+
+.map-card-header span {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.map-card-header small {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+}
+
+.map-image-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #111;
+  aspect-ratio: 4 / 3;
+}
+
+.map-image-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.map-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.38)),
+    radial-gradient(circle at 50% 50%, transparent 45%, rgba(8, 8, 15, 0.18));
+  pointer-events: none;
+}
+
+.gargallo-pin {
+  position: absolute;
+  left: 52%;
+  top: 57%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffd166;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 0 6px rgba(255, 209, 102, 0.18),
+    0 0 24px 8px rgba(255, 209, 102, 0.55);
+  z-index: 2;
+}
+
+.gargallo-pin::after {
+  content: "";
+  position: absolute;
+  inset: -13px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 209, 102, 0.65);
+  animation: pinPulse 1.8s ease-out infinite;
+}
+
+.map-caption {
+  margin: 16px 4px 4px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+@keyframes pinPulse {
+  from {
+    transform: scale(0.55);
+    opacity: 0.9;
+  }
+
+  to {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .eclipse-section {
+    padding: 85px 6%;
+  }
+
+  .eclipse-container {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .eclipse-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .eclipse-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .map-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .eclipse-map-card {
+    padding: 12px;
+    border-radius: 22px;
+  }
+
+  .map-image-wrap {
+    border-radius: 18px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
 /* ── BUTTONS ────────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
