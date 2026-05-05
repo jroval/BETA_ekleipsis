@@ -1448,3 +1448,9 @@ a {
     grid-template-columns: 1fr auto auto;
   }
 }
+@media (max-width: 767px) {
+  .footer-logo {
+    height: 36px;
+    width: auto;
+  }
+}
