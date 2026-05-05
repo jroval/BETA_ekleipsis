@@ -77,7 +77,7 @@
   "organizer": {
     "@type": "Organization",
     "name": "Ekleipsis Fest",
-    "url": "https://ekleipsis.netlify.app/"
+    "url": "https://ekleipsis.netlify.app/",
     "sameAs": [
     "https://instagram.com/ekleipsisfest"
   ]
@@ -122,14 +122,21 @@
         <span></span>
       </button>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="#eclipse">El eclipse</a>
-        <a href="#programa">Programa</a>
-        <a href="#entradas">Entradas</a>
-        <a href="#mapa">Mapa</a>
-        <a href="#seguridad">Seguridad</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+<nav class="main-nav" id="mainNav">
+  <a href="#eclipse" data-i18n="nav_eclipse">El eclipse</a>
+  <a href="#programa" data-i18n="nav_programa">Programa</a>
+  <a href="#entradas" data-i18n="nav_entradas">Entradas</a>
+  <a href="#mapa" data-i18n="nav_mapa">Mapa</a>
+  <a href="#seguridad" data-i18n="nav_seguridad">Seguridad</a>
+  <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
+
+  <div class="language-switcher">
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+    <button class="lang-btn" data-lang="de">DE</button>
+  </div>
+</nav>
     </div>
   </header>
 
@@ -141,74 +148,72 @@
   <div class="hero-inner">
 
     <div class="hero-content">
-      <p class="hero-kicker">✦ FESTIVAL ASTRONÓMICO ✦</p>
+      <p class="hero-kicker" data-i18n="hero_kicker">✦ FESTIVAL ASTRONÓMICO ✦</p>
 
       <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" class="hero-logo">
 
-      <p class="hero-subtitle">ASTRONOMÍA + MÚSICA + NATURALEZA</p>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">ASTRONOMÍA + MÚSICA + NATURALEZA</p>
 
-      <p class="hero-text">
+      <p class="hero-text" data-i18n="hero_text">
         Un encuentro único bajo el cielo, ven a ver el eclipse y disfruta de una experiencia inolvidable.
       </p>
 
       <div class="hero-actions">
-        <a href="#entradas" class="btn btn-primary">Conseguir entradas</a>
-        <a href="#programa" class="btn btn-secondary">Ver programa</a>
+        <a href="#entradas" class="btn btn-primary" data-i18n="hero_btn_tickets">Conseguir entradas</a>
+        <a href="#programa" class="btn btn-secondary" data-i18n="hero_btn_program">Ver programa</a>
       </div>
     </div>
 
     <aside class="hero-card">
-  <div class="hero-card-item">
-    <span class="hero-card-icon">▦</span>
-    <div>
-      <p class="hero-card-title">11 - 14<br>Agosto 2026</p>
-    </div>
-  </div>
+      <div class="hero-card-item">
+        <span class="hero-card-icon">▦</span>
+        <div>
+          <p class="hero-card-title" data-i18n="hero_card_date">11 - 14<br>Agosto 2026</p>
+        </div>
+      </div>
 
-  <div class="hero-card-item">
-    <span class="hero-card-icon">⌖</span>
-    <div>
-      <p class="hero-card-title">Gargallo<br>Teruel</p>
-    </div>
-  </div>
+      <div class="hero-card-item">
+        <span class="hero-card-icon">⌖</span>
+        <div>
+          <p class="hero-card-title" data-i18n="hero_card_location">Gargallo<br>Teruel</p>
+        </div>
+      </div>
 
-  <div class="hero-card-item">
-    <span class="hero-card-icon">◇</span>
-    <div>
-      <p class="hero-card-title">Entradas</p>
-      <p class="hero-card-small">Próximamente</p>
-    </div>
-  </div>
-</aside>
+      <div class="hero-card-item">
+        <span class="hero-card-icon">◇</span>
+        <div>
+          <p class="hero-card-title" data-i18n="hero_card_tickets">Entradas</p>
+          <p class="hero-card-small" data-i18n="hero_card_soon">Próximamente</p>
+        </div>
+      </div>
+    </aside>
 
   </div>
-</section>
-
 </section>
 
 <div class="festival-summary">
   <article class="summary-item">
     <div class="summary-icon icon-eclipse"></div>
-    <h3>Eclipse</h3>
-    <p>Sé testigo de un eclipse solar desde una ubicación privilegiada.</p>
+    <h3 data-i18n="summary_eclipse_title">Eclipse</h3>
+    <p data-i18n="summary_eclipse_text">Sé testigo de un eclipse solar desde una ubicación privilegiada.</p>
   </article>
 
   <article class="summary-item">
     <div class="summary-icon icon-camping"></div>
-    <h3>Camping</h3>
-    <p>Zona de acampada en plena naturaleza para vivir el festival.</p>
+    <h3 data-i18n="summary_camping_title">Camping</h3>
+    <p data-i18n="summary_camping_text">Zona de acampada en plena naturaleza para vivir el festival.</p>
   </article>
 
   <article class="summary-item">
     <div class="summary-icon icon-music"></div>
-    <h3>Música</h3>
-    <p>Conciertos y sesiones para disfrutar bajo las estrellas.</p>
+    <h3 data-i18n="summary_music_title">Música</h3>
+    <p data-i18n="summary_music_text">Conciertos y sesiones para disfrutar bajo las estrellas.</p>
   </article>
 
   <article class="summary-item">
     <div class="summary-icon icon-nature"></div>
-    <h3>Naturaleza</h3>
-    <p>Rutas, talleres y actividades para conectar con el entorno.</p>
+    <h3 data-i18n="summary_nature_title">Naturaleza</h3>
+    <p data-i18n="summary_nature_text">Rutas, talleres y actividades para conectar con el entorno.</p>
   </article>
 </div>
 
@@ -216,49 +221,48 @@
   <div class="eclipse-container">
 
     <div class="eclipse-content">
-      <span class="section-kicker">12 de agosto de 2026</span>
+      <span class="section-kicker" data-i18n="eclipse_kicker">12 de agosto de 2026</span>
 
-      <h2>El eclipse total de Sol de 2026</h2>
+      <h2 data-i18n="eclipse_title">El eclipse total de Sol de 2026</h2>
 
-      <p>
+      <p data-i18n="eclipse_text_1">
         Ekleipsis Fest nace para vivir uno de los fenómenos astronómicos más impresionantes:
         un eclipse total de Sol. Gargallo, Teruel, se encuentra dentro de la franja de totalidad,
         una zona privilegiada para contemplar el momento en el que el día se convierte en noche.
       </p>
 
-      <p>
+      <p data-i18n="eclipse_text_2">
         La experiencia se completa con observación guiada, divulgación astronómica,
         actividades familiares, música, Perseidas y una conexión directa con el territorio.
       </p>
 
       <div class="eclipse-highlights">
         <div>
-          <strong>100%</strong>
-          <span>zona de totalidad</span>
+          <strong data-i18n="eclipse_highlight_1_value">100%</strong>
+          <span data-i18n="eclipse_highlight_1_label">zona de totalidad</span>
         </div>
         <div>
-          <strong>360º</strong>
-          <span>cielo abierto</span>
+          <strong data-i18n="eclipse_highlight_2_value">360º</strong>
+          <span data-i18n="eclipse_highlight_2_label">cielo abierto</span>
         </div>
         <div>
-          <strong>2026</strong>
-          <span>evento irrepetible</span>
+          <strong data-i18n="eclipse_highlight_3_value">2026</strong>
+          <span data-i18n="eclipse_highlight_3_label">evento irrepetible</span>
         </div>
       </div>
     </div>
 
     <div class="eclipse-map-card">
       <div class="map-card-header">
-        <span>Mapa de totalidad</span>
-        <small>Gargallo · Teruel</small>
+        <span data-i18n="map_title">Mapa de totalidad</span>
+        <small data-i18n="map_location">Gargallo · Teruel</small>
       </div>
 
       <div class="map-image-wrap">
         <img src="assets/img/mapa_gargallo.png" alt="Mapa de la franja de totalidad del eclipse en Gargallo, Teruel">
-        
       </div>
 
-      <p class="map-caption">
+      <p class="map-caption" data-i18n="map_caption">
         Gargallo se sitúa dentro de la franja de totalidad del eclipse solar del 12 de agosto de 2026.
       </p>
     </div>
@@ -267,155 +271,152 @@
 </section>
 
     <!-- PROGRAMA -->
-    <section class="section section-dark" id="programa">
-      <div class="container">
-        <p class="section-tag">Programa</p>
-        <h2>Tres días para mirar al cielo</h2>
-
-        <div class="program-grid">
-
-          <article class="program-day">
-            <button class="accordion-btn">
-              Día 11 · Bienvenida al cosmos
-              <span>+</span>
-            </button>
-            <div class="accordion-content">
-              <h3>Mañana</h3>
-              <p>Recogida de pulseras, montaje de acampada.</p>
-
-              <h3>Tarde</h3>
-              <p>Introducción a los eclipses, Sistema Solar, apps astronómicas, planisferio y protección ocular.Observación del cielo nocturno, tipos de telescopios, contaminación lumínica, espectroscopia y actividades infantiles.</p>
-
-              <h3>Noche</h3>
-              <p>19:00–23:00 actuación de bandas. 23:00–01:00 actuación musical DJ.</p>
-            </div>
-          </article>
-
-          <article class="program-day featured">
-            <button class="accordion-btn">
-              Día 12 · Eclipse y experiencias
-              <span>+</span>
-            </button>
-            <div class="accordion-content">
-              <h3>Mañana</h3>
-              <p>Vía Láctea, galaxias, nebulosas, astrofotografía, astronomía vs astrología, cielo del nacimiento y seguridad visual.</p>
-
-              <h3>Tarde · Evento principal</h3>
-              <p>Preparación y visualización del eclipse en la zona de observación junto al recinto, explicación guiada y actividades infantiles adaptadas.</p>
-
-              <h3>Noche</h3>
-              <p>Observación de Perseidas, astrofotografía nocturna, fiesta temática espacial, conciertos y DJ hasta las 02:00.</p>
-            </div>
-          </article>
-
-          <article class="program-day">
-            <button class="accordion-btn">
-              Día 13 · Futuro y cosmos
-              <span>+</span>
-            </button>
-            <div class="accordion-content">
-              <h3>Mañana</h3>
-              <p>Programa Artemis, James Webb, Hubble, astrofilosofía, cosmología, origen del universo y agujeros negros.</p>
-
-              <h3>Tarde</h3>
-              <p>Astroturismo, la Tierra, observatorios terrestres, asociaciones astronómicas y preparación del eclipse total de 2027 en España.</p>
-
-              <h3>Noche</h3>
-              <p>19:00–23:00 conciertos. 23:00–02:00 actuación musical DJ.</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-<!-- ENTRADAS new -->
-    <section class="tickets-section" id="entradas">
+<section class="section section-dark" id="programa">
   <div class="container">
-    <p class="section-kicker">Entradas</p>
-    <h2>Elige cómo quieres vivir EKLEIPSIS FEST</h2>
-    <p class="tickets-intro">
+    <p class="section-tag" data-i18n="program_kicker">Programación</p>
+    <h2 data-i18n="program_title">TRES DÍAS PARA MIRAR AL CIELO</h2>
+
+    <div class="program-grid">
+
+      <article class="program-day">
+        <button class="accordion-btn">
+          <span data-i18n="program_day_11_title">Día 11 · Bienvenido al festival</span>
+          <span class="accordion-plus">+</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 data-i18n="program_morning">Mañana</h3>
+          <p data-i18n="program_day_11_morning">Recogida de pulseras, montaje de acampada.</p>
+
+          <h3 data-i18n="program_afternoon">Tarde</h3>
+          <p data-i18n="program_day_11_afternoon">Introducción a los eclipses, Sistema Solar, apps astronómicas, planisferio y protección ocular. Observación del cielo nocturno, tipos de telescopios, contaminación lumínica, espectroscopia y actividades infantiles.</p>
+
+          <h3 data-i18n="program_night">Noche</h3>
+          <p data-i18n="program_day_11_night">19:00–23:00 actuación de bandas. 23:00–01:00 actuación musical DJ.</p>
+        </div>
+      </article>
+
+      <article class="program-day featured">
+        <button class="accordion-btn">
+          <span data-i18n="program_day_12_title">Día 12 · Eclipse y experiencias</span>
+          <span class="accordion-plus">+</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 data-i18n="program_morning">Mañana</h3>
+          <p data-i18n="program_day_12_morning">Vía Láctea, galaxias, nebulosas, astrofotografía, astronomía vs astrología, cielo del nacimiento y seguridad visual.</p>
+
+          <h3 data-i18n="program_day_12_afternoon_title">Tarde · Evento principal</h3>
+          <p data-i18n="program_day_12_afternoon">Preparación y visualización del eclipse en la zona de observación junto al recinto, explicación guiada y actividades infantiles adaptadas.</p>
+
+          <h3 data-i18n="program_night">Noche</h3>
+          <p data-i18n="program_day_12_night">Observación de Perseidas, astrofotografía nocturna, fiesta temática espacial, conciertos y DJ hasta las 02:00.</p>
+        </div>
+      </article>
+
+      <article class="program-day">
+        <button class="accordion-btn">
+          <span data-i18n="program_day_13_title">Día 13 · Futuro y cosmos</span>
+          <span class="accordion-plus">+</span>
+        </button>
+
+        <div class="accordion-content">
+          <h3 data-i18n="program_morning">Mañana</h3>
+          <p data-i18n="program_day_13_morning">Programa Artemis, James Webb, Hubble, astrofilosofía, cosmología, origen del universo y agujeros negros.</p>
+
+          <h3 data-i18n="program_afternoon">Tarde</h3>
+          <p data-i18n="program_day_13_afternoon">Astroturismo, la Tierra, observatorios terrestres, asociaciones astronómicas y preparación del eclipse total de 2027 en España.</p>
+
+          <h3 data-i18n="program_night">Noche</h3>
+          <p data-i18n="program_day_13_night">19:00–23:00 conciertos. 23:00–02:00 actuación musical DJ.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ENTRADAS -->
+<section class="tickets-section" id="entradas">
+  <div class="container">
+    <p class="section-kicker" data-i18n="tickets_kicker">Entradas</p>
+    <h2 data-i18n="tickets_title">Elige cómo quieres vivir EKLEIPSIS FEST</h2>
+    <p class="tickets-intro" data-i18n="tickets_intro">
       Todas las modalidades incluyen acceso al festival y zona de acampada. La compra final se realizará de forma segura en Ticketmaster.
     </p>
 
     <div class="tickets-grid">
 
       <article class="ticket-card">
-        <span class="ticket-badge">Para parejas</span>
-        <h3>Tienda propia x2</h3>
-        <p class="ticket-price">135€ <span>/ persona</span></p>
-        <p class="ticket-total">270€ total · 2 personas</p>
+        <span class="ticket-badge" data-i18n="ticket_own_tent_2_badge">Tienda propia x2</span>
+        <p class="ticket-price">135€ <span data-i18n="ticket_per_person">/ persona</span></p>
+        <p class="ticket-total" data-i18n="ticket_own_tent_2_total">270€ total · 2 personas</p>
         <ul>
-          <li>Entrada al festival</li>
-          <li>Acampada con tienda propia</li>
-          <li>Parcela incluida</li>
+          <li data-i18n="ticket_include_festival">Entrada al festival</li>
+          <li data-i18n="ticket_include_own_tent">Acampada con tienda propia</li>
+          <li data-i18n="ticket_include_plot">Parcela incluida</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
       <article class="ticket-card ticket-featured">
-        <span class="ticket-badge">Mejor opción</span>
-        <h3>Tienda propia x4</h3>
-        <p class="ticket-price">125€ <span>/ persona</span></p>
-        <p class="ticket-total">500€ total · 4 personas</p>
+        <span class="ticket-badge" data-i18n="ticket_own_tent_4_badge">Tienda propia x4</span>
+        <p class="ticket-price">125€ <span data-i18n="ticket_per_person">/ persona</span></p>
+        <p class="ticket-total" data-i18n="ticket_own_tent_4_total">500€ total · 4 personas</p>
         <ul>
-          <li>Entrada al festival</li>
-          <li>Acampada con tienda propia</li>
-          <li>Ideal para grupos pequeños</li>
+          <li data-i18n="ticket_include_festival">Entrada al festival</li>
+          <li data-i18n="ticket_include_own_tent">Acampada con tienda propia</li>
+          <li data-i18n="ticket_include_small_groups">Ideal para grupos pequeños</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
       <article class="ticket-card">
-        <span class="ticket-badge">Camper friendly</span>
-        <h3>Autocaravana o camper</h3>
-        <p class="ticket-price">150€ <span>/ persona</span></p>
-        <p class="ticket-total">600€ total · hasta 4 personas</p>
+        <span class="ticket-badge" data-i18n="ticket_camper_badge">Autocaravana o camper</span>
+        <p class="ticket-price">150€ <span data-i18n="ticket_per_person">/ persona</span></p>
+        <p class="ticket-total" data-i18n="ticket_camper_total">600€ total · hasta 4 personas</p>
         <ul>
-          <li>Entrada al festival</li>
-          <li>Parcela de 35m²</li>
-          <li>Para camper o autocaravana</li>
+          <li data-i18n="ticket_include_festival">Entrada al festival</li>
+          <li data-i18n="ticket_include_35">Parcela de 35m²</li>
+          <li data-i18n="ticket_include_camper">Para camper o autocaravana</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
       <article class="ticket-card">
-        <span class="ticket-badge">Premium</span>
-        <h3>Glamping x4</h3>
-        <p class="ticket-price">255€ <span>/ persona</span></p>
-        <p class="ticket-total">1.020€ total · 4 personas</p>
+        <span class="ticket-badge" data-i18n="ticket_glamping_4_badge">Glamping x4</span>
+        <p class="ticket-price">255€ <span data-i18n="ticket_per_person">/ persona</span></p>
+        <p class="ticket-total" data-i18n="ticket_glamping_4_total">1.020€ total · 4 personas</p>
         <ul>
-          <li>Entrada al festival</li>
-          <li>Alojamiento glamping</li>
-          <li>Más comodidad</li>
+          <li data-i18n="ticket_include_festival">Entrada al festival</li>
+          <li data-i18n="ticket_include_glamping">Alojamiento glamping</li>
+          <li data-i18n="ticket_include_comfort">Más comodidad</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
       <article class="ticket-card">
-        <span class="ticket-badge">Grupos grandes</span>
-        <h3>Glamping x8</h3>
-        <p class="ticket-price">245€ <span>/ persona</span></p>
-        <p class="ticket-total">1.960€ total · 8 personas</p>
+        <span class="ticket-badge" data-i18n="ticket_glamping_8_badge">Glamping x8</span>
+        <p class="ticket-price">245€ <span data-i18n="ticket_per_person">/ persona</span></p>
+        <p class="ticket-total" data-i18n="ticket_glamping_8_total">1.960€ total · 8 personas</p>
         <ul>
-          <li>Entrada al festival</li>
-          <li>Alojamiento glamping</li>
-          <li>Ideal para grupos</li>
+          <li data-i18n="ticket_include_festival">Entrada al festival</li>
+          <li data-i18n="ticket_include_glamping">Alojamiento glamping</li>
+          <li data-i18n="ticket_include_groups">Ideal para grupos</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
       <article class="ticket-card">
-        <span class="ticket-badge">Familias</span>
-        <h3>Pack familiar</h3>
-        <p class="ticket-price">390€ <span>total</span></p>
-        <p class="ticket-total">2 adultos + 1 o 2 niños</p>
+        <span class="ticket-badge" data-i18n="ticket_family_badge">Pack familiar</span>
+        <p class="ticket-price">390€ <span data-i18n="ticket_total_word">total</span></p>
+        <p class="ticket-total" data-i18n="ticket_family_total">2 adultos + 1 o 2 niños</p>
         <ul>
-          <li>Entrada general</li>
-          <li>Acampada con tienda propia</li>
-          <li>Pensado para familias</li>
+          <li data-i18n="ticket_include_general">Entrada general</li>
+          <li data-i18n="ticket_include_own_tent">Acampada con tienda propia</li>
+          <li data-i18n="ticket_include_families">Pensado para familias</li>
         </ul>
-        <a href="#" class="ticket-btn">Comprar en Ticketmaster</a>
+        <a href="#" class="ticket-btn" data-i18n="ticket_buy">COMPRAR en Ticketmaster</a>
       </article>
 
     </div>
@@ -424,87 +425,87 @@
 
   
 
-    <!-- MAPA -->
-    <section class="section section-dark" id="mapa">
-      <div class="container">
-        <p class="section-tag">Recinto</p>
-        <h2>Mapa interactivo del festival</h2>
+   <!-- MAPA -->
+<section class="section section-dark" id="mapa">
+  <div class="container">
+    <p class="section-tag" data-i18n="interactive_map_kicker">Recinto</p>
+    <h2 data-i18n="interactive_map_title">Mapa interactivo del festival</h2>
 
-        <div class="map-layout">
-          <div class="visual-map">
-            <button class="map-point camping" data-title="Zona de camping" data-text="Parcelas de 5x7 metros para hasta 4 personas. Espacio para tiendas propias, campers y autocaravanas.">Camping</button>
+    <div class="map-layout">
+      <div class="visual-map">
+        <button class="map-point camping" data-title="Zona de camping" data-text="Parcelas de 5x7 metros para hasta 4 personas. Espacio para tiendas propias, campers y autocaravanas." data-i18n="map_point_camping">Camping</button>
 
-            <button class="map-point visionado" data-title="Zona de visionado" data-text="Área preparada para observar el eclipse total de Sol con explicación guiada y recomendaciones de seguridad.">Visionado</button>
+        <button class="map-point visionado" data-title="Zona de visionado" data-text="Área preparada para observar el eclipse total de Sol con explicación guiada y recomendaciones de seguridad." data-i18n="map_point_viewing">Visionado</button>
 
-            <button class="map-point escenario" data-title="Escenario principal" data-text="Zona de conciertos, actuaciones de bandas, DJ y eventos musicales nocturnos.">Escenario</button>
+        <button class="map-point escenario" data-title="Escenario principal" data-text="Zona de conciertos, actuaciones de bandas, DJ y eventos musicales nocturnos." data-i18n="map_point_stage">Escenario</button>
 
-            <button class="map-point actividades" data-title="Zona de actividades" data-text="Espacio para talleres de astronomía, actividades familiares, cine del cosmos, catas, agromercado y merchandising.">Actividades</button>
-          </div>
-
-          <div class="map-info" id="mapInfo">
-            <h3>Selecciona una zona</h3>
-            <p>Haz clic sobre una zona del mapa para ver información del camping, visionado, escenario o actividades.</p>
-          </div>
-        </div>
+        <button class="map-point actividades" data-title="Zona de actividades" data-text="Espacio para talleres de astronomía, actividades familiares, cine del cosmos, catas, agromercado y merchandising." data-i18n="map_point_activities">Actividades</button>
       </div>
-    </section>
+
+      <div class="map-info" id="mapInfo">
+        <h3 data-i18n="map_info_title">Selecciona una zona</h3>
+        <p data-i18n="map_info_text">Haz clic sobre una zona del mapa para ver información del camping, visionado, escenario o actividades.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- CAMPING -->
-    <section class="section" id="camping">
-      <div class="container two-columns">
-        <div>
-          <p class="section-tag">Camping y estancia</p>
-          <h2>Duerme bajo el cielo de Teruel</h2>
-          <p>
-            El festival contará con zona de acampada para asistentes, parcelas para tiendas propias, opciones de glamping, autocaravanas y campers.
-          </p>
-          <p>
-            La información definitiva sobre tipos de estancia, accesos, servicios y condiciones se actualizará antes de la apertura oficial de ventas.
-          </p>
-        </div>
+<section class="section" id="camping">
+  <div class="container two-columns">
+    <div>
+      <p class="section-tag" data-i18n="camping_kicker">Camping y estancia</p>
+      <h2 data-i18n="camping_title">Duerme bajo el cielo de Teruel</h2>
+      <p data-i18n="camping_text_1">
+        El festival contará con zona de acampada para asistentes, parcelas para tiendas propias, opciones de glamping, autocaravanas y campers.
+      </p>
+      <p data-i18n="camping_text_2">
+        La información definitiva sobre tipos de estancia, accesos, servicios y condiciones se actualizará antes de la apertura oficial de ventas.
+      </p>
+    </div>
 
-        <div class="info-card">
-          <h3>Opciones previstas</h3>
-          <ul>
-            <li>Tienda estándar.</li>
-            <li>Domo o glamping premium.</li>
-            <li>Autocaravana o camper propia.</li>
-            <li>Parking para asistentes.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="info-card">
+      <h3 data-i18n="camping_options_title">Opciones previstas</h3>
+      <ul>
+        <li data-i18n="camping_option_1">Tienda estándar.</li>
+        <li data-i18n="camping_option_2">Domo o glamping premium.</li>
+        <li data-i18n="camping_option_3">Autocaravana o camper propia.</li>
+        <li data-i18n="camping_option_4">Parking para asistentes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
     <!-- SEGURIDAD -->
 <section class="section section-warning" id="seguridad">
   <div class="container">
-    <p class="section-tag">Recomendaciones</p>
-    <h2>Seguridad ante todo</h2>
+    <p class="section-tag" data-i18n="safety_kicker">Recomendaciones</p>
+    <h2 data-i18n="safety_title">Seguridad ante todo</h2>
 
-    <p>
+    <p data-i18n="safety_intro">
       Un eclipse solar es un fenómeno extraordinario, pero también requiere precaución. 
-      La observación del Sol nunca es segura sin la protección adecuada, independientemente del lugar o las condiciones.
+      La observación del Sol nunca es segura sin la protección adecuada.
     </p>
 
     <div class="warning-grid">
       <div>
-        <h3>Protección ocular</h3>
-        <p>
-          Utiliza siempre gafas homologadas para observación solar. Mirar directamente al Sol sin protección puede causar daños irreversibles en la vista.
+        <h3 data-i18n="safety_eye_title">Protección ocular</h3>
+        <p data-i18n="safety_eye_text">
+          Utiliza siempre gafas homologadas para observación solar. Mirar directamente al Sol sin protección puede causar daños irreversibles.
         </p>
       </div>
 
       <div>
-        <h3>Supervisión</h3>
-        <p>
-          Los menores deben observar el eclipse bajo la supervisión de un adulto y utilizando siempre protección adecuada.
+        <h3 data-i18n="safety_supervision_title">Supervisión</h3>
+        <p data-i18n="safety_supervision_text">
+          Los menores deben observar el eclipse bajo supervisión de un adulto y con protección adecuada.
         </p>
       </div>
 
       <div>
-        <h3>Información y asistencia</h3>
-        <p>
-          Durante el festival habrá personal y contenidos divulgativos que explicarán cómo observar el eclipse correctamente, pero la responsabilidad final recae en cada asistente.
+        <h3 data-i18n="safety_info_title">Información</h3>
+        <p data-i18n="safety_info_text">
+          Durante el festival habrá personal informando sobre cómo observar el eclipse correctamente, pero la responsabilidad final es individual.
         </p>
       </div>
     </div>
@@ -512,53 +513,54 @@
 </section>
 
     <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="container">
-        <p class="section-tag">FAQ</p>
-        <h2>Preguntas frecuentes</h2>
+<section class="section" id="faq">
+  <div class="container">
+    <p class="section-tag" data-i18n="faq_kicker">FAQ</p>
+    <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
 
-        <div class="faq-list">
-          <details>
-            <summary>¿Dónde se celebra Ekleipsis Fest?</summary>
-            <p>En Gargallo, Teruel.</p>
-          </details>
+    <div class="faq-list">
+      <details>
+        <summary data-i18n="faq_q1">¿Dónde se celebra Ekleipsis Fest?</summary>
+        <p data-i18n="faq_a1">En Gargallo, Teruel.</p>
+      </details>
 
-          <details>
-            <summary>¿Cuándo será el eclipse?</summary>
-            <p>El eclipse total de Sol será el 12 de agosto de 2026.</p>
-          </details>
+      <details>
+        <summary data-i18n="faq_q2">¿Cuándo será el eclipse?</summary>
+        <p data-i18n="faq_a2">El eclipse total de Sol será el 12 de agosto de 2026.</p>
+      </details>
 
-          <details>
-            <summary>¿Dónde se compran las entradas?</summary>
-            <p>Las entradas se venderán a través de Ticketmaster.</p>
-          </details>
+      <details>
+        <summary data-i18n="faq_q3">¿Dónde se compran las entradas?</summary>
+        <p data-i18n="faq_a3">Las entradas se venderán a través de Ticketmaster.</p>
+      </details>
 
-          <details>
-            <summary>¿Habrá camping?</summary>
-            <p>Sí, habrá zona de acampada con parcelas, opciones de glamping y espacio para campers o autocaravanas.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+      <details>
+        <summary data-i18n="faq_q4">¿Habrá camping?</summary>
+        <p data-i18n="faq_a4">Sí, habrá zona de acampada con diferentes opciones.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
   </main>
 
   <footer class="site-footer" id="contacto">
-    <div class="container footer-content">
-      <div>
-        <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" class="footer-logo" />
-        <p>Ekleipsis Fest 2026 · Gargallo, Teruel</p>
-      </div>
-
-      <div>
-        <p>Contacto provisional</p>
-        <a href="mailto:info@ekleipsisfest.com">info@ekleipsisfest.com</a>
-      </div>
-
-      <a href="https://www.ticketmaster.es/" target="_blank" class="btn btn-primary">Comprar entradas</a>
+  <div class="container footer-content">
+    <div>
+      <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" class="footer-logo" />
+      <p data-i18n="footer_location">Ekleipsis Fest 2026 · Gargallo, Teruel</p>
     </div>
-  </footer>
 
+    <div>
+      <p data-i18n="footer_contact">Contacto</p>
+      <a href="mailto:info@ekleipsisfest.com">info@ekleipsisfest.com</a>
+    </div>
+
+    <a href="#" class="btn btn-primary" data-i18n="footer_cta">COMPRAR entradas</a>
+  </div>
+</footer>
+
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

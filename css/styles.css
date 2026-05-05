@@ -161,8 +161,7 @@ a {
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* ── HERO NUEVO ─────────────────────────────────────────────── */
-/* ── HERO NUEVO ─────────────────────────────────────────────── */
+/* ── HERO ─────────────────────────────────────────────────── */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -206,26 +205,22 @@ a {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-
   display: grid;
   grid-template-columns: 520px 1fr 280px;
   align-items: center;
   column-gap: 64px;
 }
 
-/* columna izquierda */
 .hero-content {
   grid-column: 1;
   max-width: 520px;
 }
 
-/* columna centro reservada para eclipse */
 .hero-center {
   grid-column: 2;
   min-height: 300px;
 }
 
-/* texto superior */
 .hero-kicker {
   margin-bottom: 10px;
   color: var(--gold);
@@ -245,7 +240,6 @@ a {
   text-transform: uppercase;
 }
 
-/* logo grande */
 .hero-logo {
   width: min(420px, 88vw);
   height: auto;
@@ -377,8 +371,9 @@ a {
     background:
       linear-gradient(180deg, rgba(8,8,15,0.18) 0%, rgba(8,8,15,0.34) 45%, rgba(8,8,15,0.55) 100%);
   }
-   .hero::after {
-    opacity: 0.15; /* antes 0.28 */
+
+  .hero::after {
+    opacity: 0.15;
   }
 
   .hero-inner {
@@ -436,6 +431,7 @@ a {
   }
 }
 
+/* ── ECLIPSE SECTION ────────────────────────────────────────── */
 .eclipse-section {
   position: relative;
   padding: 110px 6%;
@@ -569,8 +565,6 @@ a {
   pointer-events: none;
 }
 
-
-
 .map-caption {
   margin: 16px 4px 4px;
   color: rgba(255, 255, 255, 0.68);
@@ -579,15 +573,8 @@ a {
 }
 
 @keyframes pinPulse {
-  from {
-    transform: scale(0.55);
-    opacity: 0.9;
-  }
-
-  to {
-    transform: scale(1.45);
-    opacity: 0;
-  }
+  from { transform: scale(0.55); opacity: 0.9; }
+  to   { transform: scale(1.45); opacity: 0; }
 }
 
 @media (max-width: 950px) {
@@ -628,7 +615,6 @@ a {
 }
 
 /* ── FESTIVAL RESUMEN ───────────────────────────────────────── */
-
 .festival-summary {
   width: min(1180px, 100%);
   margin: 70px auto 0;
@@ -687,7 +673,6 @@ a {
   line-height: 1.55;
 }
 
-/* ICONO ECLIPSE CSS */
 .icon-eclipse::before {
   content: "";
   position: absolute;
@@ -709,7 +694,6 @@ a {
     -19px 0 0 -5px #d99a2b;
 }
 
-/* ICONO CAMPING CSS */
 .icon-camping::before {
   content: "";
   position: absolute;
@@ -733,7 +717,6 @@ a {
   transform: rotate(-22deg);
 }
 
-/* ICONO MÚSICA CSS */
 .icon-music::before {
   content: "♫";
   position: absolute;
@@ -745,7 +728,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* ICONO NATURALEZA CSS */
 .icon-nature::before {
   content: "";
   position: absolute;
@@ -769,27 +751,6 @@ a {
   border-right: 1.5px solid #d99a2b;
   transform: skewX(-32deg);
 }
-
-/* OPCIÓN PARA CAMBIAR ICONOS MÁS ADELANTE */
-/*
-Cuando tengas los iconos definitivos, cambia cada div así:
-
-<div class="summary-icon">
-  <img src="assets/icons/eclipse.svg" alt="">
-</div>
-
-Y activa este CSS:
-
-.summary-icon {
-  border: none;
-}
-
-.summary-icon img {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-}
-*/
 
 @media (max-width: 900px) {
   .festival-summary {
@@ -966,22 +927,25 @@ Y activa este CSS:
   box-shadow: 0 24px 90px rgba(255,139,71,0.12);
 }
 
+/* Botón acordeón — base (móvil) */
 .accordion-btn {
   width: 100%;
   padding: 22px;
   border: 0;
   background: transparent;
-  color: var(--light);
+  color: var(--gold);
   text-align: left;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 18px;
   font-size: 1.08rem;
   font-weight: 950;
   cursor: pointer;
 }
 
-.accordion-btn span {
+/* Bola dorada: SOLO para .accordion-plus */
+.accordion-plus {
   flex: 0 0 auto;
   width: 30px;
   height: 30px;
@@ -1167,25 +1131,10 @@ Y activa este CSS:
   background: linear-gradient(135deg, var(--gold), var(--orange));
 }
 
-.camping {
-  top: 18%;
-  left: 13%;
-}
-
-.visionado {
-  top: 34%;
-  left: 58%;
-}
-
-.escenario {
-  top: 68%;
-  left: 22%;
-}
-
-.actividades {
-  top: 58%;
-  left: 56%;
-}
+.camping  { top: 18%; left: 13%; }
+.visionado { top: 34%; left: 58%; }
+.escenario { top: 68%; left: 22%; }
+.actividades { top: 58%; left: 56%; }
 
 .map-info {
   padding: 28px;
@@ -1253,6 +1202,35 @@ Y activa este CSS:
 .site-footer a:not(.btn) {
   color: var(--gold);
   text-decoration: none;
+}
+
+/* ── LANGUAGE SWITCHER ──────────────────────────────────────── */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 14px;
+}
+
+.lang-btn {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--light);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 7px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
 }
 
 /* ── MEDIA QUERIES ──────────────────────────────────────────── */
@@ -1446,6 +1424,19 @@ Y activa este CSS:
     border-radius: 18px;
     aspect-ratio: 1 / 1;
   }
+
+  .language-switcher {
+    width: 100%;
+    justify-content: center;
+    margin: 14px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .lang-btn {
+    font-size: 0.72rem;
+    padding: 8px 12px;
+  }
 }
 
 /* DESKTOP */
@@ -1488,12 +1479,24 @@ Y activa este CSS:
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .accordion-content {
-    display: block;
+  /* Acordeón en desktop: título visible, contenido siempre abierto */
+  .accordion-btn {
+    padding: 22px 22px 10px;
+    cursor: default;
+    pointer-events: none;
+    font-size: 1rem;
+    color: var(--gold);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .accordion-btn span {
+  .accordion-plus {
     display: none;
+  }
+
+  .accordion-content {
+    display: block;
   }
 
   .warning-grid {
