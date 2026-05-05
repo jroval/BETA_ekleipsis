@@ -106,6 +106,8 @@
   }
 }
 </script>
+<!-- 12. Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body id="top">
@@ -165,53 +167,61 @@
     </div>
 
     <aside class="hero-card">
-      <div class="hero-card-item">
-        <span class="hero-card-icon">▦</span>
-        <div>
-          <p class="hero-card-title" data-i18n="hero_card_date">11 - 14<br>Agosto 2026</p>
-        </div>
-      </div>
+  <div class="hero-card-item">
+    <span class="hero-card-icon"><i data-lucide="calendar"></i></span>
+    <div>
+      <p class="hero-card-title" data-i18n="hero_card_date">11 - 14<br>Agosto 2026</p>
+    </div>
+  </div>
 
-      <div class="hero-card-item">
-        <span class="hero-card-icon">⌖</span>
-        <div>
-          <p class="hero-card-title" data-i18n="hero_card_location">Gargallo<br>Teruel</p>
-        </div>
-      </div>
+  <div class="hero-card-item">
+    <span class="hero-card-icon"><i data-lucide="map-pin"></i></span>
+    <div>
+      <p class="hero-card-title" data-i18n="hero_card_location">Gargallo<br>Teruel</p>
+    </div>
+  </div>
 
-      <div class="hero-card-item">
-        <span class="hero-card-icon">◇</span>
-        <div>
-          <p class="hero-card-title" data-i18n="hero_card_tickets">Entradas</p>
-          <p class="hero-card-small" data-i18n="hero_card_soon">Próximamente</p>
-        </div>
-      </div>
-    </aside>
+  <div class="hero-card-item">
+    <span class="hero-card-icon"><i data-lucide="ticket"></i></span>
+    <div>
+      <p class="hero-card-title" data-i18n="hero_card_tickets">Entradas</p>
+      <p class="hero-card-small" data-i18n="hero_card_soon">Próximamente</p>
+    </div>
+  </div>
+</aside>
 
   </div>
 </section>
 
 <div class="festival-summary">
   <article class="summary-item">
-    <div class="summary-icon icon-eclipse"></div>
+    <div class="summary-icon">
+      <i data-lucide="sun"></i>
+    </div>
     <h3 data-i18n="summary_eclipse_title">Eclipse</h3>
     <p data-i18n="summary_eclipse_text">Sé testigo de un eclipse solar desde una ubicación privilegiada.</p>
   </article>
 
   <article class="summary-item">
-    <div class="summary-icon icon-camping"></div>
+    <div class="summary-icon">
+      <i data-lucide="tent"></i>
+    </div>
     <h3 data-i18n="summary_camping_title">Camping</h3>
     <p data-i18n="summary_camping_text">Zona de acampada en plena naturaleza para vivir el festival.</p>
   </article>
 
   <article class="summary-item">
-    <div class="summary-icon icon-music"></div>
+    <div class="summary-icon">
+      <i data-lucide="music"></i>
+    </div>
     <h3 data-i18n="summary_music_title">Música</h3>
     <p data-i18n="summary_music_text">Conciertos y sesiones para disfrutar bajo las estrellas.</p>
   </article>
 
   <article class="summary-item">
-    <div class="summary-icon icon-nature"></div>
+    <div class="summary-icon">
+      <i data-lucide="leaf"></i>
+    </div>
     <h3 data-i18n="summary_nature_title">Naturaleza</h3>
     <p data-i18n="summary_nature_text">Rutas, talleres y actividades para conectar con el entorno.</p>
   </article>
@@ -559,8 +569,9 @@
     <a href="#" class="btn btn-primary" data-i18n="footer_cta">COMPRAR entradas</a>
   </div>
 </footer>
-
+ 
   <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
+   <script>lucide.createIcons();</script>
 </body>
 </html>
