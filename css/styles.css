@@ -658,11 +658,13 @@ a {
   justify-content: center;
 }
 
-.summary-icon i {
+.summary-icon svg {
   width: 22px;
   height: 22px;
-  stroke: #d99a2b;
+  stroke: #d99a2b !important;
   stroke-width: 1.5;
+  fill: none !important;
+  color: #d99a2b !important;
 }
 
 .summary-item h3 {
