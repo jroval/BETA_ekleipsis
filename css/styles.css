@@ -1195,6 +1195,15 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .hero-eclipse {
+    top: 22%;     /* antes 32% → lo subimos */
+    left: 50%;
+    width: 95px;
+    opacity: 0.85; /* opcional: menos agresivo */
+  }
+}
+
 /* Desktop */
 @media (min-width: 768px) {
   .menu-toggle {
