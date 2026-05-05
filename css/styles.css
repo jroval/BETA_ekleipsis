@@ -1197,6 +1197,7 @@ a {
 
 @media (max-width: 900px) {
   .hero-eclipse {
+    display: none;
     top: 22%;     /* antes 32% → lo subimos */
     left: 50%;
     width: 95px;
