@@ -569,29 +569,7 @@ a {
   pointer-events: none;
 }
 
-.gargallo-pin {
-  position: absolute;
-  left: 52%;
-  top: 57%;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #ffd166;
-  transform: translate(-50%, -50%);
-  box-shadow:
-    0 0 0 6px rgba(255, 209, 102, 0.18),
-    0 0 24px 8px rgba(255, 209, 102, 0.55);
-  z-index: 2;
-}
 
-.gargallo-pin::after {
-  content: "";
-  position: absolute;
-  inset: -13px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 209, 102, 0.65);
-  animation: pinPulse 1.8s ease-out infinite;
-}
 
 .map-caption {
   margin: 16px 4px 4px;
@@ -646,6 +624,202 @@ a {
   .map-image-wrap {
     border-radius: 18px;
     aspect-ratio: 1 / 1;
+  }
+}
+
+/* ── FESTIVAL RESUMEN ───────────────────────────────────────── */
+
+.festival-summary {
+  width: min(1180px, 100%);
+  margin: 70px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(8, 8, 15, 0.72);
+  box-shadow:
+    0 0 5px 1px rgba(255, 255, 255, 0.14),
+    0 24px 70px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(14px);
+  overflow: hidden;
+}
+
+.summary-item {
+  position: relative;
+  min-height: 160px;
+  padding: 28px 32px 30px;
+  text-align: center;
+}
+
+.summary-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 56px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.summary-icon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 14px;
+  border: 1.5px solid #d99a2b;
+  border-radius: 50%;
+}
+
+.summary-item h3 {
+  margin: 0 0 8px;
+  color: #fff4d8;
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.summary-item p {
+  margin: 0 auto;
+  max-width: 190px;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+/* ICONO ECLIPSE CSS */
+.icon-eclipse::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1.5px solid #d99a2b;
+  border-radius: 50%;
+}
+
+.icon-eclipse::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  border-radius: 50%;
+  background: #d99a2b;
+  box-shadow:
+    0 -19px 0 -5px #d99a2b,
+    0 19px 0 -5px #d99a2b,
+    19px 0 0 -5px #d99a2b,
+    -19px 0 0 -5px #d99a2b;
+}
+
+/* ICONO CAMPING CSS */
+.icon-camping::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 16px;
+  height: 18px;
+  border-left: 1.5px solid #d99a2b;
+  border-bottom: 1.5px solid #d99a2b;
+  transform: rotate(45deg);
+}
+
+.icon-camping::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  width: 1.5px;
+  height: 19px;
+  background: #d99a2b;
+  transform: rotate(-22deg);
+}
+
+/* ICONO MÚSICA CSS */
+.icon-music::before {
+  content: "♫";
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  color: #d99a2b;
+  font-size: 1.8rem;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* ICONO NATURALEZA CSS */
+.icon-nature::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 23px;
+  width: 22px;
+  height: 12px;
+  border-left: 1.5px solid #d99a2b;
+  border-bottom: 1.5px solid #d99a2b;
+  transform: skewX(-32deg);
+}
+
+.icon-nature::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  width: 20px;
+  height: 11px;
+  border-top: 1.5px solid #d99a2b;
+  border-right: 1.5px solid #d99a2b;
+  transform: skewX(-32deg);
+}
+
+/* OPCIÓN PARA CAMBIAR ICONOS MÁS ADELANTE */
+/*
+Cuando tengas los iconos definitivos, cambia cada div así:
+
+<div class="summary-icon">
+  <img src="assets/icons/eclipse.svg" alt="">
+</div>
+
+Y activa este CSS:
+
+.summary-icon {
+  border: none;
+}
+
+.summary-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+*/
+
+@media (max-width: 900px) {
+  .festival-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summary-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .summary-item {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 560px) {
+  .festival-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-item:not(:last-child)::after {
+    top: auto;
+    right: 28px;
+    bottom: 0;
+    width: calc(100% - 56px);
+    height: 1px;
+  }
+
+  .summary-item:nth-child(2)::after {
+    display: block;
   }
 }
 
