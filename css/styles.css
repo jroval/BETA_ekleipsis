@@ -1114,12 +1114,25 @@ a {
   color: #170c02;
   background: linear-gradient(135deg, var(--gold), var(--orange));
 }
+.map-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 34px;
+}
+
+.visual-map {
+  aspect-ratio: 16 / 9;
+  min-height: unset;
+}
 
 .camping  { top: 18%; left: 13%; }
 .visionado { top: 34%; left: 58%; }
 .escenario { top: 68%; left: 22%; }
 .actividades { top: 58%; left: 56%; }
-.Parking { top: 10%; left: 70%; }
+.parking { top: 10%; left: 70%; }
 .acceso { top: 40%; left: 20%; }
 
 .map-info {
