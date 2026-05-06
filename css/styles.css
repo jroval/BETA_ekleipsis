@@ -318,12 +318,14 @@ a {
   border-radius: 14px;
   background: rgba(8,8,15,0.48);
   backdrop-filter: blur(8px);
-  box-shadow: 0 24px 70px rgba(0,0,0,0.32);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.32), 0 0 30px 4px rgba(255,209,102,0.30);
+  text-align: center;
 }
 
 .hero-card-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 14px;
   margin-bottom: 22px;
 }
@@ -433,6 +435,37 @@ a {
   }
 }
 
+
+/* TICKER */
+.ticker-wrap {
+  overflow: hidden;
+  background: rgba(255, 209, 102, 0.06);
+  border-top: 1px solid rgba(255, 209, 102, 0.2);
+  border-bottom: 1px solid rgba(255, 209, 102, 0.2);
+  padding: 14px 0;
+  white-space: nowrap;
+}
+
+.ticker {
+  display: inline-flex;
+  gap: 60px;
+  animation: ticker 18s linear infinite;
+}
+
+.ticker span {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+
 /* ── ECLIPSE SECTION ────────────────────────────────────────── */
 .eclipse-section {
   position: relative;
@@ -487,6 +520,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
   margin-top: 34px;
+  
 }
 
 .eclipse-highlights div {
@@ -501,6 +535,7 @@ a {
   margin-bottom: 6px;
   color: #ffd166;
   font-size: 1.35rem;
+ 
 }
 
 .eclipse-highlights span {
@@ -619,7 +654,7 @@ a {
 /* ── FESTIVAL RESUMEN ───────────────────────────────────────── */
 .festival-summary {
   width: min(1180px, 100%);
-  margin: 70px auto 0;
+  margin: 70px auto 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -815,6 +850,10 @@ a {
   border-color: rgba(8,8,15,0.18);
 }
 
+.warning-grid h3 {
+  font-size: 1.25rem;
+}
+
 .two-columns,
 .tickets-layout,
 .map-layout {
@@ -904,16 +943,27 @@ a {
 }
 
 /* ── ENTRADAS ───────────────────────────────────────────────── */
+
+
+.tickets-section > .container > h2 {
+  font-size: clamp(2.1rem, 5vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+.tickets-section > .container > h2 span {
+  color: var(--gold);
+  text-transform: none;
+}
 .tickets-section {
-  padding: 90px 0;
-  background: radial-gradient(circle at top, rgba(255,180,80,0.12), transparent 35%), #080b18;
-  color: #fff;
+  padding: 90px 0 40px;
 }
 
 .tickets-intro {
   max-width: 720px;
   margin: 0 auto 40px;
   text-align: center;
+  font-size: 0.9rem;
   color: rgba(255,255,255,0.75);
 }
 
@@ -1069,6 +1119,8 @@ a {
 .visionado { top: 34%; left: 58%; }
 .escenario { top: 68%; left: 22%; }
 .actividades { top: 58%; left: 56%; }
+.Parking { top: 10%; left: 70%; }
+.acceso { top: 40%; left: 20%; }
 
 .map-info {
   padding: 28px;

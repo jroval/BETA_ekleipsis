@@ -97,7 +97,7 @@ const translations = {
   hero_kicker: "✦ FESTIVAL ASTRONÓMICO ✦",
   hero_subtitle: "ASTRONOMÍA + MÚSICA + NATURALEZA",
   hero_text: "Un encuentro único bajo el cielo, ven a ver el eclipse y disfruta de una experiencia inolvidable.",
-  hero_btn_tickets: "Conseguir entradas",
+  hero_btn_tickets: "Conseguir PRÓXIMAMENTE",
   hero_btn_program: "Ver programa",
   hero_card_date: "11 - 14<br>Agosto 2026",
   hero_card_location: "Gargallo<br>Teruel",
@@ -105,7 +105,7 @@ const translations = {
   hero_card_soon: "Ticketmaster",
 
   summary_eclipse_title: "Eclipse",
-  summary_eclipse_text: "Sé testigo de un eclipse solar desde una ubicación privilegiada.",
+  summary_eclipse_text: "Sé testigo de un eclipse toal de Sol desde una ubicación privilegiada.",
   summary_camping_title: "Camping",
   summary_camping_text: "Zona de acampada en plena naturaleza para vivir el festival.",
   summary_music_title: "Música",
@@ -120,8 +120,8 @@ eclipse_text_2: "La experiencia se completa con observación guiada, divulgació
 
 eclipse_highlight_1_value: "100%",
 eclipse_highlight_1_label: "zona de totalidad",
-eclipse_highlight_2_value: "360º",
-eclipse_highlight_2_label: "cielo abierto",
+eclipse_highlight_2_value: "OPEN SKY",
+eclipse_highlight_2_label: "horizonte sin obstáculos",
 eclipse_highlight_3_value: "2026",
 eclipse_highlight_3_label: "evento irrepetible",
 
@@ -130,12 +130,12 @@ map_location: "Gargallo · Teruel",
 map_caption: "Gargallo se sitúa dentro de la franja de totalidad del eclipse solar del 12 de agosto de 2026.",
 
 tickets_kicker: "Entradas",
-tickets_title: "Elige cómo quieres vivir EKLEIPSIS FEST",
-tickets_intro: "Todas las modalidades incluyen acceso al festival y zona de acampada. La compra final se realizará de forma segura en Ticketmaster.",
+tickets_title: "Elige cómo quieres vivir <span>EKLEIPSIS FEST</span",
+tickets_intro: "Todas las modalidades incluyen acceso al festival, zona de acampada y Parking. La compra final se realizará de forma segura PRÓXIMAMENTE.",
 
 ticket_per_person: "/ persona",
 ticket_total_word: "total",
-ticket_buy: "COMPRAR en Ticketmaster",
+ticket_buy: "COMPRAR PRÓXIMAMENTE",
 
 ticket_own_tent_2_badge: "Tienda propia x2",
 ticket_own_tent_2_total: "270€ total · 2 personas",
@@ -167,8 +167,8 @@ ticket_include_groups: "Ideal para grupos",
 ticket_include_general: "Entrada general",
 ticket_include_families: "Pensado para familias",
 
-program_kicker: "Programación",
-program_title: "Tres días para mirar al cielo",
+program_kicker: "Line up",
+program_title: "PROGRAMACIÓN DEL FESTIVAL",
 program_morning: "Mañana",
 program_afternoon: "Tarde",
 program_night: "Noche",
@@ -194,6 +194,7 @@ map_point_camping: "Camping",
 map_point_viewing: "Visionado",
 map_point_stage: "Escenario",
 map_point_activities: "Actividades",
+map_point_Parking: "Parking",
 map_info_title: "Selecciona una zona",
 map_info_text: "Haz clic sobre una zona del mapa para ver información del camping, visionado, escenario o actividades.",
 
@@ -216,7 +217,7 @@ safety_eye_text: "Utiliza siempre gafas homologadas para observación solar. Mir
 safety_supervision_title: "Supervisión",
 safety_supervision_text: "Los menores deben observar el eclipse bajo supervisión de un adulto y con protección adecuada.",
 safety_info_title: "Información",
-safety_info_text: "Durante el festival habrá personal informando sobre cómo observar el eclipse correctamente, pero la responsabilidad final es individual.",
+safety_info_text: "Durante el festival se dará información a los asistentes sobre cómo observar el eclipse correctamente.",
 
 faq_kicker: "FAQ",
 faq_title: "Preguntas frecuentes",
@@ -231,7 +232,7 @@ faq_a4: "Sí, habrá zona de acampada con diferentes opciones.",
 
 footer_location: "Ekleipsis Fest 2026 · Gargallo, Teruel",
 footer_contact: "Contacto",
-footer_cta: "COMPRAR entradas"
+footer_cta: "ENTRADAS PRÓXIMAMENTE"
 
 },
   en: {
@@ -244,7 +245,7 @@ footer_cta: "COMPRAR entradas"
     hero_kicker: "✦ ASTRONOMY FESTIVAL ✦",
 hero_subtitle: "ASTRONOMY + MUSIC + NATURE",
 hero_text: "A unique gathering under the sky. Come and witness the eclipse while enjoying an unforgettable experience.",
-hero_btn_tickets: "Get tickets",
+hero_btn_tickets: "SOON tickets",
 hero_btn_program: "View programme",
 hero_card_date: "11 - 14<br>August 2026",
 hero_card_location: "Gargallo<br>Teruel",
@@ -252,7 +253,7 @@ hero_card_tickets: "Tickets",
 hero_card_soon: "Ticketmaster",
 
 summary_eclipse_title: "Eclipse",
-summary_eclipse_text: "Witness a solar eclipse from a privileged location.",
+summary_eclipse_text: "Witness a total solar eclipse from a privileged location.",
 summary_camping_title: "Camping",
 summary_camping_text: "A camping area surrounded by nature to fully experience the festival.",
 summary_music_title: "Music",
@@ -267,8 +268,8 @@ eclipse_text_2: "The experience is enhanced with guided observation, astronomy o
 
 eclipse_highlight_1_value: "100%",
 eclipse_highlight_1_label: "path of totality",
-eclipse_highlight_2_value: "360º",
-eclipse_highlight_2_label: "open sky",
+eclipse_highlight_2_value: "OPEN SKY",
+eclipse_highlight_2_label: "unobstructed horizon",
 eclipse_highlight_3_value: "2026",
 eclipse_highlight_3_label: "once-in-a-lifetime event",
 
@@ -277,12 +278,12 @@ map_location: "Gargallo · Teruel",
 map_caption: "Gargallo is located within the path of totality of the August 12, 2026 solar eclipse.",
 
 tickets_kicker: "Tickets",
-tickets_title: "Choose how you want to experience EKLEIPSIS FEST",
-tickets_intro: "All options include festival access and a camping area. Final purchase will be completed securely through Ticketmaster.",
+tickets_title: "Choose how you want to experience <span>EKLEIPSIS FEST</span>",
+tickets_intro: "All options include festival access, camping area and Parking. Final purchase will be completed securely through Ticketmaster.",
 
 ticket_per_person: "/ person",
 ticket_total_word: "total",
-ticket_buy: "BUY on Ticketmaster",
+ticket_buy: "BUY SOON",
 
 ticket_own_tent_2_badge: "Own tent x2",
 ticket_own_tent_2_total: "€270 total · 2 people",
@@ -314,8 +315,8 @@ ticket_include_groups: "Ideal for groups",
 ticket_include_general: "General admission",
 ticket_include_families: "Designed for families",
 
-program_kicker: "Programme",
-program_title: "Three days to look up at the sky",
+program_kicker: "Line up",
+program_title: "Festival program",
 program_morning: "Morning",
 program_afternoon: "Afternoon",
 program_night: "Night",
@@ -362,7 +363,7 @@ safety_eye_text: "Always use certified solar viewing glasses. Looking directly a
 safety_supervision_title: "Supervision",
 safety_supervision_text: "Children must observe the eclipse under adult supervision and with proper protection.",
 safety_info_title: "Information",
-safety_info_text: "There will be staff providing guidance, but responsibility remains with each attendee.",
+safety_info_text: "During the festival, attendees will be given information on how to properly observe the eclipse.",
 
 faq_kicker: "FAQ",
 faq_title: "Frequently asked questions",
@@ -377,7 +378,7 @@ faq_a4: "Yes, there will be several camping options.",
 
 footer_location: "Ekleipsis Fest 2026 · Gargallo, Teruel",
 footer_contact: "Contact",
-footer_cta: "BUY tickets"
+footer_cta: "SOON tickets"
 
   },
   fr: {
@@ -390,7 +391,7 @@ footer_cta: "BUY tickets"
     hero_kicker: "✦ FESTIVAL D’ASTRONOMIE ✦",
 hero_subtitle: "ASTRONOMIE + MUSIQUE + NATURE",
 hero_text: "Une rencontre unique sous le ciel. Venez observer l’éclipse et vivre une expérience inoubliable.",
-hero_btn_tickets: "Obtenir des billets",
+hero_btn_tickets: "BILLETS BIENTÔT DISPONIBLES",
 hero_btn_program: "Voir le programme",
 hero_card_date: "11 - 14<br>Août 2026",
 hero_card_location: "Gargallo<br>Teruel",
@@ -398,7 +399,7 @@ hero_card_tickets: "Billets",
 hero_card_soon: "Ticketmaster",
 
 summary_eclipse_title: "Éclipse",
-summary_eclipse_text: "Assistez à une éclipse solaire depuis un emplacement privilégié.",
+summary_eclipse_text: "Assistez à une éclipse solaire totale depuis un lieu privilégié.",
 summary_camping_title: "Camping",
 summary_camping_text: "Une zone de camping en pleine nature pour vivre pleinement le festival.",
 summary_music_title: "Musique",
@@ -413,8 +414,8 @@ eclipse_text_2: "L’expérience est complétée par une observation guidée, de
 
 eclipse_highlight_1_value: "100%",
 eclipse_highlight_1_label: "zone de totalité",
-eclipse_highlight_2_value: "360º",
-eclipse_highlight_2_label: "ciel ouvert",
+eclipse_highlight_2_value: "OPEN SKY",
+eclipse_highlight_2_label: "horizon dégagé",
 eclipse_highlight_3_value: "2026",
 eclipse_highlight_3_label: "événement unique",
 
@@ -423,12 +424,12 @@ map_location: "Gargallo · Teruel",
 map_caption: "Gargallo se situe dans la bande de totalité de l’éclipse solaire du 12 août 2026.",
 
 tickets_kicker: "Billets",
-tickets_title: "Choisissez comment vivre EKLEIPSIS FEST",
-tickets_intro: "Toutes les formules incluent l’accès au festival et à la zone de camping. L’achat final se fera en toute sécurité via Ticketmaster.",
+tickets_title: "Choisissez comment vivre <span>EKLEIPSIS FEST</span>",
+tickets_intro: "Toutes les formules incluent l’accès au festival, zone de camping et Parking. L’achat final se fera en toute sécurité via Ticketmaster.",
 
 ticket_per_person: "/ personne",
 ticket_total_word: "total",
-ticket_buy: "ACHETER sur Ticketmaster",
+ticket_buy: "BILLETS BIENTÔT DISPONIBLES",
 
 ticket_own_tent_2_badge: "Tente personnelle x2",
 ticket_own_tent_2_total: "270€ total · 2 personnes",
@@ -460,8 +461,8 @@ ticket_include_groups: "Idéal pour groupes",
 ticket_include_general: "Entrée générale",
 ticket_include_families: "Pensé pour les familles",
 
-program_kicker: "Programme",
-program_title: "Trois jours pour regarder le ciel",
+program_kicker: "Line up",
+program_title: "FESTIVAL PROGRAMME",
 program_morning: "Matin",
 program_afternoon: "Après-midi",
 program_night: "Nuit",
@@ -508,7 +509,7 @@ safety_eye_text: "Utilisez toujours des lunettes certifiées pour l’observatio
 safety_supervision_title: "Supervision",
 safety_supervision_text: "Les enfants doivent observer l’éclipse sous la supervision d’un adulte et avec une protection appropriée.",
 safety_info_title: "Information",
-safety_info_text: "Du personnel sera présent pour donner des conseils, mais la responsabilité finale appartient à chaque participant.",
+safety_info_text: "Durant le festival, les participants recevront des informations sur la manière d'observer correctement l'éclipse.",
 
 faq_kicker: "FAQ",
 faq_title: "Questions fréquentes",
@@ -523,7 +524,7 @@ faq_a4: "Oui, plusieurs options de camping seront disponibles.",
 
 footer_location: "Ekleipsis Fest 2026 · Gargallo, Teruel",
 footer_contact: "Contact",
-footer_cta: "ACHETER des billets"
+footer_cta: "BILLETS BIENTÔT DISPONIBLES"
 
 
   },
@@ -537,7 +538,7 @@ footer_cta: "ACHETER des billets"
     hero_kicker: "✦ ASTRONOMIE-FESTIVAL ✦",
 hero_subtitle: "ASTRONOMIE + MUSIK + NATUR",
 hero_text: "Ein einzigartiges Treffen unter dem Himmel. Erlebe die Sonnenfinsternis und genieße ein unvergessliches Erlebnis.",
-hero_btn_tickets: "Tickets sichern",
+hero_btn_tickets: "BALD",
 hero_btn_program: "Programm ansehen",
 hero_card_date: "11. - 14.<br>August 2026",
 hero_card_location: "Gargallo<br>Teruel",
@@ -545,7 +546,7 @@ hero_card_tickets: "Tickets",
 hero_card_soon: "Ticketmaster",
 
 summary_eclipse_title: "Sonnenfinsternis",
-summary_eclipse_text: "Erlebe eine Sonnenfinsternis von einem privilegierten Standort aus.",
+summary_eclipse_text: "Erleben Sie eine totale Sonnenfinsternis von einem privilegierten Ort aus.",
 summary_camping_title: "Camping",
 summary_camping_text: "Ein Campingbereich mitten in der Natur, um das Festival vollständig zu erleben.",
 summary_music_title: "Musik",
@@ -560,8 +561,8 @@ eclipse_text_2: "Das Erlebnis wird durch geführte Beobachtung, astronomische In
 
 eclipse_highlight_1_value: "100%",
 eclipse_highlight_1_label: "Totalitätszone",
-eclipse_highlight_2_value: "360º",
-eclipse_highlight_2_label: "offener Himmel",
+eclipse_highlight_2_value: "OPEN SKY",
+eclipse_highlight_2_label: "freier Horizont",
 eclipse_highlight_3_value: "2026",
 eclipse_highlight_3_label: "einmaliges Ereignis",
 
@@ -570,12 +571,12 @@ map_location: "Gargallo · Teruel",
 map_caption: "Gargallo liegt innerhalb des Totalitätsstreifens der Sonnenfinsternis am 12. August 2026.",
 
 tickets_kicker: "Tickets",
-tickets_title: "Wähle, wie du EKLEIPSIS FEST erleben möchtest",
-tickets_intro: "Alle Optionen beinhalten den Zugang zum Festival und zum Campingbereich. Der endgültige Kauf erfolgt sicher über Ticketmaster.",
+tickets_title: "Wähle, wie du <span>EKLEIPSIS FEST</span> erleben möchtest",
+tickets_intro: "Alle Optionen sind im Festivaleintritt, im Campingbereich und im Parkplatz inbegriffen. Der Kauf wird sicher über Ticketmaster abgewickelt.",
 
 ticket_per_person: "/ Person",
 ticket_total_word: "gesamt",
-ticket_buy: "Bei Ticketmaster KAUFEN",
+ticket_buy: "BALD",
 
 ticket_own_tent_2_badge: "Eigenes Zelt x2",
 ticket_own_tent_2_total: "270€ gesamt · 2 Personen",
@@ -606,8 +607,8 @@ ticket_include_comfort: "Mehr Komfort",
 ticket_include_groups: "Ideal für Gruppen",
 ticket_include_general: "Allgemeiner Eintritt",
 ticket_include_families: "Für Familien gedacht",
-program_kicker: "Programm",
-program_title: "Drei Tage, um in den Himmel zu schauen",
+program_kicker: "line up",
+program_title: "Festivalprogramm",
 program_morning: "Vormittag",
 program_afternoon: "Nachmittag",
 program_night: "Nacht",
@@ -654,7 +655,7 @@ safety_eye_text: "Verwende immer zertifizierte Sonnenfinsternis-Brillen. Direkt 
 safety_supervision_title: "Aufsicht",
 safety_supervision_text: "Kinder sollten die Sonnenfinsternis nur unter Aufsicht eines Erwachsenen und mit geeignetem Schutz beobachten.",
 safety_info_title: "Information",
-safety_info_text: "Während des Festivals gibt es Personal zur Unterstützung, aber die Verantwortung liegt bei jedem Besucher selbst.",
+safety_info_text: "Im Rahmen des Festivals erhalten die Teilnehmer Informationen darüber, wie man die Sonnenfinsternis richtig beobachtet.",
 
 faq_kicker: "FAQ",
 faq_title: "Häufig gestellte Fragen",
@@ -669,7 +670,7 @@ faq_a4: "Ja, es gibt mehrere Camping-Optionen.",
 
 footer_location: "Ekleipsis Fest 2026 · Gargallo, Teruel",
 footer_contact: "Kontakt",
-footer_cta: "TICKETS KAUFEN"
+footer_cta: "BALD"
   }
 };
 
@@ -701,3 +702,4 @@ langButtons.forEach((button) => {
 
 const savedLanguage = localStorage.getItem("ekleipsisLang") || "es";
 setLanguage(savedLanguage);
+
