@@ -105,7 +105,7 @@ const translations = {
   hero_card_soon: "Ticketmaster",
 
   summary_eclipse_title: "Eclipse",
-  summary_eclipse_text: "Sé testigo de un eclipse toal de Sol desde una ubicación privilegiada.",
+  summary_eclipse_text: "Sé testigo de un eclipse total de Sol desde una ubicación privilegiada.",
   summary_camping_title: "Camping",
   summary_camping_text: "Zona de acampada en plena naturaleza para vivir el festival.",
   summary_music_title: "Música",
