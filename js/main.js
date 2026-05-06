@@ -119,11 +119,11 @@ eclipse_text_1: "Ekleipsis Fest nace para vivir uno de los fenómenos astronómi
 eclipse_text_2: "La experiencia se completa con observación guiada, divulgación astronómica, actividades familiares, música, Perseidas y una conexión directa con el territorio.",
 
 eclipse_highlight_1_value: "100%",
-eclipse_highlight_1_label: "zona de totalidad",
+eclipse_highlight_1_label: "ZONA DE TOTALIDAD",
 eclipse_highlight_2_value: "OPEN SKY",
-eclipse_highlight_2_label: "horizonte sin obstáculos",
+eclipse_highlight_2_label: "HORIZONTE SIN OBSTÁCULOS",
 eclipse_highlight_3_value: "2026",
-eclipse_highlight_3_label: "evento irrepetible",
+eclipse_highlight_3_label: "EVENTO IRREPETIBLE",
 
 map_title: "Mapa de totalidad",
 map_location: "Gargallo · Teruel",
@@ -268,11 +268,11 @@ eclipse_text_1: "Ekleipsis Fest was created to experience one of the most impres
 eclipse_text_2: "The experience is enhanced with guided observation, astronomy outreach, family activities, music, the Perseids and a deep connection with the surrounding landscape.",
 
 eclipse_highlight_1_value: "100%",
-eclipse_highlight_1_label: "path of totality",
+eclipse_highlight_1_label: "PATH OF TOTALITY",
 eclipse_highlight_2_value: "OPEN SKY",
-eclipse_highlight_2_label: "unobstructed horizon",
+eclipse_highlight_2_label: "UNOBSTRUCTED HORIZON",
 eclipse_highlight_3_value: "2026",
-eclipse_highlight_3_label: "once-in-a-lifetime event",
+eclipse_highlight_3_label: "ONCE IN A LIFETIME EVENT",
 
 map_title: "Path of totality map",
 map_location: "Gargallo · Teruel",
@@ -416,11 +416,11 @@ eclipse_text_1: "Ekleipsis Fest est né pour vivre l’un des phénomènes astro
 eclipse_text_2: "L’expérience est complétée par une observation guidée, de la vulgarisation scientifique, des activités familiales, de la musique, les Perséides et une connexion directe avec le territoire.",
 
 eclipse_highlight_1_value: "100%",
-eclipse_highlight_1_label: "zone de totalité",
+eclipse_highlight_1_label: "ZONE DE TOTALITÉ",
 eclipse_highlight_2_value: "OPEN SKY",
-eclipse_highlight_2_label: "horizon dégagé",
+eclipse_highlight_2_label: "HORIZON DÉGAGÉ",
 eclipse_highlight_3_value: "2026",
-eclipse_highlight_3_label: "événement unique",
+eclipse_highlight_3_label: "ÉVÉNEMENT UNIQUE",
 
 map_title: "Carte de la totalité",
 map_location: "Gargallo · Teruel",
@@ -565,11 +565,11 @@ eclipse_text_1: "Ekleipsis Fest wurde geschaffen, um eines der beeindruckendsten
 eclipse_text_2: "Das Erlebnis wird durch geführte Beobachtung, astronomische Inhalte, Familienaktivitäten, Musik, die Perseiden und eine direkte Verbindung zur Umgebung ergänzt.",
 
 eclipse_highlight_1_value: "100%",
-eclipse_highlight_1_label: "Totalitätszone",
+eclipse_highlight_1_label: "TOTALITÄTSZONE",
 eclipse_highlight_2_value: "OPEN SKY",
-eclipse_highlight_2_label: "freier Horizont",
+eclipse_highlight_2_label: "FREIER HORIZONT",
 eclipse_highlight_3_value: "2026",
-eclipse_highlight_3_label: "einmaliges Ereignis",
+eclipse_highlight_3_label: "EINMALIGES EREIGNIS",
 
 map_title: "Karte der Totalität",
 map_location: "Gargallo · Teruel",
