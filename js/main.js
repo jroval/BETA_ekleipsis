@@ -97,7 +97,7 @@ const translations = {
   hero_kicker: "✦ FESTIVAL ASTRONÓMICO ✦",
   hero_subtitle: "ASTRONOMÍA + MÚSICA + NATURALEZA",
   hero_text: "Un encuentro único bajo el cielo, ven a ver el eclipse y disfruta de una experiencia inolvidable.",
-  hero_btn_tickets: "Conseguir PRÓXIMAMENTE",
+  hero_btn_tickets: "ENTRADAS PRÓXIMAMENTE",
   hero_btn_program: "Ver programa",
   hero_card_date: "11 - 14<br>Agosto 2026",
   hero_card_location: "Gargallo<br>Teruel",
@@ -135,7 +135,7 @@ tickets_intro: "Todas las modalidades incluyen acceso al festival, zona de acamp
 
 ticket_per_person: "/ persona",
 ticket_total_word: "total",
-ticket_buy: "COMPRAR PRÓXIMAMENTE",
+ticket_buy: "ENTRADAS PRÓXIMAMENTE",
 
 ticket_own_tent_2_badge: "Tienda propia x2",
 ticket_own_tent_2_total: "270€ total · 2 personas",
@@ -246,7 +246,7 @@ footer_cta: "ENTRADAS PRÓXIMAMENTE"
 hero_subtitle: "ASTRONOMY + MUSIC + NATURE",
 hero_text: "A unique gathering under the sky. Come and witness the eclipse while enjoying an unforgettable experience.",
 hero_btn_tickets: "SOON tickets",
-hero_btn_program: "View programme",
+hero_btn_program: "View program",
 hero_card_date: "11 - 14<br>August 2026",
 hero_card_location: "Gargallo<br>Teruel",
 hero_card_tickets: "Tickets",
@@ -283,7 +283,7 @@ tickets_intro: "All options include festival access, camping area and Parking. F
 
 ticket_per_person: "/ person",
 ticket_total_word: "total",
-ticket_buy: "BUY SOON",
+ticket_buy: "SOON TICKETS",
 
 ticket_own_tent_2_badge: "Own tent x2",
 ticket_own_tent_2_total: "€270 total · 2 people",
