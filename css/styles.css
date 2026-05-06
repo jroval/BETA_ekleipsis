@@ -1155,12 +1155,12 @@ a {
   }
 }
 @media (max-width: 767px) {
-  .camping    { top: 19%; left: 54%; }
-  .visionado  { top: 25%; left: 18%; }
-  .escenario  { top: 0.2%; left: 45%; }
+  .camping    { top: 16%; left: 54%; }
+  .visionado  { top: 20%; left: 18%; }
+  .escenario  { top: 0%; left: 40%; }
   .actividades { top: 0.2%; left: 65%; }
-  .parking    { top: 38%; left: 45% }
-  .acceso     { top: 48%; left: 68%; }
+  .parking    { top: 34%; left: 45% }
+  .acceso     { top: 38%; left: 68%; }
 }
 
   .map-bg {
