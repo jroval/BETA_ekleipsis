@@ -1128,16 +1128,47 @@ a {
   min-height: unset;
 }
 
-.camping  { top: 18%; left: 13%; }
-.visionado { top: 34%; left: 58%; }
-.escenario { top: 68%; left: 22%; }
-.actividades { top: 58%; left: 56%; }
-.parking { top: 10%; left: 70%; }
-.acceso { top: 40%; left: 20%; }
+  .camping    { top: 30%; left: 54%; }
+  .visionado  { top: 38%; left: 18%; }
+  .escenario  { top: 0.2%; left: 45%; }
+  .actividades { top: 0.2%; left: 70%; }
+  .parking    { top: 62%; left: 45% }
+  .acceso     { top: 75%; left: 68%; }
 
 .map-info {
   padding: 28px;
   min-height: 220px;
+}
+@media (max-width: 767px) {
+  .visual-map {
+    aspect-ratio: auto;
+    width: 100%;
+    overflow: hidden;
+     background: none;
+    border: none;
+    box-shadow: none;
+  }
+  @media (max-width: 767px) {
+  .visual-map::before,
+  .visual-map::after {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .camping    { top: 19%; left: 54%; }
+  .visionado  { top: 25%; left: 18%; }
+  .escenario  { top: 0.2%; left: 45%; }
+  .actividades { top: 0.2%; left: 65%; }
+  .parking    { top: 38%; left: 45% }
+  .acceso     { top: 48%; left: 68%; }
+}
+
+  .map-bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: unset;
+  }
 }
 
 /* ── SEGURIDAD ──────────────────────────────────────────────── */
