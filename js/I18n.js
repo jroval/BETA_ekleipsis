@@ -793,6 +793,8 @@ function setLanguage(lang) {
 
   document.documentElement.lang = lang;
   localStorage.setItem("ekleipsisLang", lang);
+
+  if (typeof lucide !== "undefined") lucide.createIcons();
 }
 
 langButtons.forEach((btn) => {
