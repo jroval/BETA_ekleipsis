@@ -259,6 +259,24 @@ a { color: inherit; }
   color: var(--gold); border: 1px solid rgba(255,209,102,0.7);
   background: rgba(8,8,15,0.35); backdrop-filter: blur(10px);
 }
+/* ── BOTÓN UNIVERSE / TICKETMASTER ─────────────────────────── */
+.btn-universe {
+  background: #3A66E5;
+  color: #fff !important;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(58, 102, 229, 0.35);
+  text-shadow: none;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.btn-universe:hover {
+  background: #2a56d5;
+  box-shadow: 0 12px 32px rgba(58, 102, 229, 0.45);
+  transform: translateY(-2px);
+}
 
 /* ── SECTIONS ───────────────────────────────────────────────── */
 .section { position: relative; padding: 92px 0; }
@@ -321,6 +339,51 @@ a { color: inherit; }
 .ticket-card li { margin-bottom: 8px; }
 .ticket-btn { display: inline-flex; justify-content: center; width: 100%; padding: 14px 18px; border-radius: 999px; background: #f6b24b; color: #111; font-weight: 800; text-decoration: none; transition: transform 0.2s ease, background 0.2s ease; }
 .ticket-btn:hover { transform: translateY(-2px); background: #ffd28a; }
+/* ── BANNER TICKETMASTER ────────────────────────────────────── */
+.tm-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 36px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  width: fit-content;
+  max-width: 100%;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.tm-banner svg {
+  width: 16px;
+  height: 16px;
+  stroke: #026CDF;
+  stroke-width: 1.8;
+  fill: none;
+  flex-shrink: 0;
+}
+
+.tm-text { color: rgba(255, 255, 255, 0.6); }
+
+.tm-brand {
+  color: #026CDF;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .tm-banner {
+    white-space: normal;
+    font-size: 0.78rem;
+    padding: 10px 16px;
+    gap: 6px;
+    border-radius: 14px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
 
 /* ── GLAMPING CATÁLOGO ──────────────────────────────────────── */
 .glamping-section {
