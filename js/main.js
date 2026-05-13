@@ -23,6 +23,8 @@ if (menuToggle && mainNav) {
   });
 }
 
+
+
 // ── ACORDEÓN PROGRAMA ──────────────────────────────────────────
 document.querySelectorAll(".accordion-btn").forEach((button) => {
   button.addEventListener("click", () => {

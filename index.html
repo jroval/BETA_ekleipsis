@@ -80,33 +80,40 @@
 <body id="top">
 
   <header class="site-header">
-    <div class="header-container">
-      <a href="#top" class="logo">
-        <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" />
-      </a>
-      <div class="header-right">
-        <div class="language-switcher">
-          <button class="lang-btn active" data-lang="es">ES</button>
-          <button class="lang-btn" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="fr">FR</button>
-          <button class="lang-btn" data-lang="de">DE</button>
-        </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
-        </button>
+  <div class="header-container">
+
+    <a href="#top" class="logo">
+      <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#eclipse" data-i18n="nav_eclipse">El eclipse</a>
+      <a href="#programa" data-i18n="nav_programa">Programa</a>
+      <a href="#entradas" data-i18n="nav_entradas">Entradas</a>
+      <a href="glamping.html" data-i18n="nav_glamping">Glamping</a>
+      <a href="#mapa" data-i18n="nav_mapa">Mapa</a>
+      <a href="#seguridad" data-i18n="nav_seguridad">Seguridad</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="de">DE</button>
       </div>
-      <nav class="main-nav" id="mainNav">
-        <a href="#eclipse" data-i18n="nav_eclipse">El eclipse</a>
-        <a href="#programa" data-i18n="nav_programa">Programa</a>
-        <a href="#entradas" data-i18n="nav_entradas">Entradas</a>
-        <a href="glamping.html" data-i18n="nav_glamping">Glamping</a>
-        <a href="#mapa" data-i18n="nav_mapa">Mapa</a>
-        <a href="#seguridad" data-i18n="nav_seguridad">Seguridad</a>
-        <a href="#faq" data-i18n="nav_faq">FAQ</a>
-        <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
-      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header>
+
+  </div>
+</header>
 
   <main>
 
@@ -281,6 +288,9 @@
             </div>
           </article>
         </div>
+        <p class="program-note">
+  La programación está sujeta a cambios. Horarios, actividades y artistas pueden modificarse por motivos organizativos o técnicos.
+</p>
       </div>
     </section>
 

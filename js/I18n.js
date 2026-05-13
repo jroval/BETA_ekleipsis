@@ -815,3 +815,37 @@ langButtons.forEach((btn) => {
 
 const savedLanguage = localStorage.getItem("ekleipsisLang") || "es";
 setLanguage(savedLanguage);
+
+/* Selector de idioma desplegable */
+/* Selector de idioma desplegable */
+document.addEventListener("DOMContentLoaded", () => {
+  const languageSwitcher = document.querySelector(".language-switcher");
+  if (!languageSwitcher) return;
+
+  const langButtons = languageSwitcher.querySelectorAll(".lang-btn");
+
+  languageSwitcher.addEventListener("click", (e) => {
+    const clickedButton = e.target.closest(".lang-btn");
+    if (!clickedButton) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isOpen = languageSwitcher.classList.contains("open");
+
+    if (!isOpen) {
+      languageSwitcher.classList.add("open");
+      return;
+    }
+
+    langButtons.forEach((btn) => btn.classList.remove("active"));
+    clickedButton.classList.add("active");
+    languageSwitcher.classList.remove("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!languageSwitcher.contains(e.target)) {
+      languageSwitcher.classList.remove("open");
+    }
+  });
+});
