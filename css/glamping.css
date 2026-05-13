@@ -1,0 +1,63 @@
+/* ============================================================
+   EKLEIPSIS FEST 2026 — glamping.css
+   Página independiente de Glamping
+   ============================================================ */
+
+/* Esta página carga styles.css primero. Aquí solo van ajustes propios
+   de glamping.html para no pisar el header global ni romper la home. */
+
+.page-glamping .site-header {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  background: rgba(8, 8, 15, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-glamping .glamping-section {
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+.page-glamping .glamp-header h1 {
+  font-family: var(--font-title);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.page-glamping .glamp-header h1 span {
+  color: var(--gold);
+}
+
+.page-glamping .main-nav a.active {
+  color: var(--gold);
+}
+
+.page-glamping .glamp-urgency .btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+  .page-glamping .glamping-section {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-glamping .glamping-section {
+    padding-top: 112px;
+  }
+
+  .page-glamping .glamp-header {
+    margin-bottom: 46px;
+  }
+
+  .page-glamping .glamp-urgency .btn {
+    width: 100%;
+  }
+}

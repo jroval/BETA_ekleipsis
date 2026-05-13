@@ -13,7 +13,8 @@ const translations = {
     nav_mapa:      "Mapa",
     nav_glamping:  "Glamping",
     nav_seguridad: "Seguridad",
-    nav_contacto:  "FAQ",
+    nav_faq:  "FAQ",
+    nav_contacto:  "Contacto",
 
     hero_kicker:        "✦ FESTIVAL ASTRONÓMICO ✦",
     hero_subtitle:      "ASTRONOMÍA + MÚSICA + NATURALEZA",
@@ -207,7 +208,8 @@ const translations = {
     nav_mapa:      "Map",
     nav_glamping:  "Glamping",
     nav_seguridad: "Safety",
-    nav_contacto:  "FAQ",
+    nav_faq:  "FAQ",
+    nav_contacto:  "Contact",
 
     hero_kicker:        "✦ ASTRONOMY FESTIVAL ✦",
     hero_subtitle:      "ASTRONOMY + MUSIC + NATURE",
@@ -401,7 +403,8 @@ const translations = {
     nav_mapa:      "Carte",
     nav_glamping:  "Glamping",
     nav_seguridad: "Sécurité",
-    nav_contacto:  "FAQ",
+    nav_faq:  "FAQ",
+    nav_contacto:  "Contact",
 
     hero_kicker:        "✦ FESTIVAL D'ASTRONOMIE ✦",
     hero_subtitle:      "ASTRONOMIE + MUSIQUE + NATURE",
@@ -595,7 +598,8 @@ const translations = {
     nav_mapa:      "Karte",
     nav_glamping:  "Glamping",
     nav_seguridad: "Sicherheit",
-    nav_contacto:  "FAQ",
+    nav_faq:  "FAQ",
+    nav_contacto:  "Kontakt",
 
     hero_kicker:        "✦ ASTRONOMIE-FESTIVAL ✦",
     hero_subtitle:      "ASTRONOMIE + MUSIK + NATUR",

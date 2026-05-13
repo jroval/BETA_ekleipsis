@@ -2,19 +2,26 @@
    EKLEIPSIS FEST 2026 — main.js
    ============================================================ */
 
+// ── ICONOS LUCIDE ─────────────────────────────────────────────
+if (typeof lucide !== "undefined") {
+  lucide.createIcons();
+}
+
 // ── MENÚ MÓVIL ─────────────────────────────────────────────────
 const menuToggle = document.getElementById("menuToggle");
-const mainNav    = document.getElementById("mainNav");
+const mainNav = document.getElementById("mainNav");
 
-menuToggle.addEventListener("click", () => {
-  mainNav.classList.toggle("active");
-});
-
-document.querySelectorAll(".main-nav a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mainNav.classList.remove("active");
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("active");
   });
-});
+
+  document.querySelectorAll(".main-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("active");
+    });
+  });
+}
 
 // ── ACORDEÓN PROGRAMA ──────────────────────────────────────────
 document.querySelectorAll(".accordion-btn").forEach((button) => {
@@ -25,52 +32,55 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
 
 // ── MAPA INTERACTIVO ───────────────────────────────────────────
 const mapButtons = document.querySelectorAll(".map-point");
-const mapInfo    = document.getElementById("mapInfo");
+const mapInfo = document.getElementById("mapInfo");
 
-mapButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const title = button.dataset.title;
-    const text  = button.dataset.text;
-    mapInfo.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
-    mapButtons.forEach((btn) => btn.classList.remove("selected"));
-    button.classList.add("selected");
+if (mapButtons.length && mapInfo) {
+  mapButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const title = button.dataset.title || "";
+      const text = button.dataset.text || "";
+
+      mapInfo.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
+      mapButtons.forEach((btn) => btn.classList.remove("selected"));
+      button.classList.add("selected");
+    });
   });
-});
-
-// ── HEADER ─────────────────────────────────────────────────────
-const siteHeader = document.querySelector(".site-header");
-
-function handleHeader() {
-  if (window.innerWidth <= 767) {
-    siteHeader.classList.add("visible");
-  } else {
-    siteHeader.classList.toggle("visible", window.scrollY > 80);
-  }
 }
-
-handleHeader();
-window.addEventListener("scroll", handleHeader);
-window.addEventListener("resize", handleHeader);
 
 // ── DROPDOWN IDIOMA MÓVIL ──────────────────────────────────────
 const langSwitcher = document.querySelector(".language-switcher");
 
-langSwitcher.addEventListener("click", (e) => {
-  if (window.innerWidth > 767) return;
-  const clickedBtn = e.target.closest(".lang-btn");
-  if (!clickedBtn) return;
-  if (!langSwitcher.classList.contains("open")) {
-    e.stopPropagation();
-    langSwitcher.classList.add("open");
-    return;
+if (langSwitcher) {
+  langSwitcher.addEventListener("click", (e) => {
+    if (window.innerWidth > 767) return;
+
+    const clickedBtn = e.target.closest(".lang-btn");
+    if (!clickedBtn) return;
+
+    if (!langSwitcher.classList.contains("open")) {
+      e.stopPropagation();
+      langSwitcher.classList.add("open");
+      return;
+    }
+
+    langSwitcher.classList.remove("open");
+  });
+
+  document.addEventListener("click", () => {
+    langSwitcher.classList.remove("open");
+  });
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      langSwitcher.classList.remove("open");
+    });
   }
-  langSwitcher.classList.remove("open");
-});
+}
 
-document.addEventListener("click", () => {
-  langSwitcher.classList.remove("open");
-});
+// ── SUCCESS FORMULARIOS NETLIFY ────────────────────────────────
+const params = new URLSearchParams(window.location.search);
+const formCard = document.getElementById("formCard");
 
-menuToggle.addEventListener("click", () => {
-  langSwitcher.classList.remove("open");
-});
+if (params.get("success") === "true" && formCard) {
+  formCard.classList.add("submitted");
+}

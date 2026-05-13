@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Glamping · Ekleipsis Fest 2026</title>
+  <meta name="description" content="Descubre las opciones de glamping de Ekleipsis Fest 2026: tiendas Standard y Premium para vivir el eclipse con más comodidad." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/png" href="assets/img/fav_icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Judson:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/glamping.css" />
+</head>
+
+<body class="page-glamping">
+
+  <header class="site-header visible">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="assets/img/EKLEIPSIS FEST_logo_final.png" alt="Ekleipsis Fest" />
+      </a>
+
+      <div class="header-right">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#eclipse" data-i18n="nav_eclipse">El eclipse</a>
+        <a href="index.html#programa" data-i18n="nav_programa">Programa</a>
+        <a href="index.html#entradas" data-i18n="nav_entradas">Entradas</a>
+        <a href="glamping.html" class="active" data-i18n="nav_glamping">Glamping</a>
+        <a href="index.html#mapa" data-i18n="nav_mapa">Mapa</a>
+        <a href="index.html#seguridad" data-i18n="nav_seguridad">Seguridad</a>
+        <a href="index.html#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="contacto.html" data-i18n="nav_contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="glamping-section" id="glamping">
+      <div class="container">
+
+        <div class="glamp-header">
+          <p class="section-tag" data-i18n="glamping_kicker">✦ Glamping · Ekleipsis Fest 2026</p>
+          <h1 data-i18n="glamping_title">No montes.<br><span>Llega y disfruta.</span></h1>
+          <p class="glamp-lead" data-i18n="glamping_lead">
+            Todo listo cuando llegues. Cama, colchón, ropa de cama y una tienda que ya tiene más personalidad que tu habitación. Tú solo trae las ganas.
+          </p>
+        </div>
+
+        <div class="glamp-tier">
+          <div class="glamp-tier-header">
+            <span class="glamp-tier-pill pill-std" data-i18n="glamping_std_pill">✦ Glamping Standard</span>
+            <div class="glamp-tier-line"></div>
+            <span class="glamp-tier-desc" data-i18n="glamping_std_desc">Bell tent · Estilo festival</span>
+          </div>
+
+          <div class="glamp-tier-body">
+
+            <div class="glamp-carousel" id="carousel-std">
+              <div class="glamp-carousel-track">
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/carpa_1.jpg" alt="Glamping Standard — bell tent exterior">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_std_slide1_title">Bell Tent — la tienda que todos quieren ver</h3>
+                    <p data-i18n="glamping_std_slide1_text">Icónica, cálida, festivalera. Llegas, abres la cremallera y ya estás en casa.</p>
+                  </div>
+                </div>
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/carpa_2.jpg" alt="Glamping Standard — interior equipado">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_std_slide2_title">Interior preparado para ti</h3>
+                    <p data-i18n="glamping_std_slide2_text">Camas, colchón y ropa de cama listos cuando llegues. Nada que montar.</p>
+                  </div>
+                </div>
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/carpa_3.jpg" alt="Glamping Standard — ambiente festival">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_std_slide3_title">El festival desde dentro</h3>
+                    <p data-i18n="glamping_std_slide3_text">A pasos del escenario y la zona de observación del eclipse.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="glamp-carousel-btn glamp-carousel-prev" aria-label="Foto anterior">
+                <i data-lucide="chevron-left"></i>
+              </button>
+
+              <button class="glamp-carousel-btn glamp-carousel-next" aria-label="Foto siguiente">
+                <i data-lucide="chevron-right"></i>
+              </button>
+
+              <div class="glamp-carousel-dots">
+                <button class="glamp-dot active" aria-label="Foto 1"></button>
+                <button class="glamp-dot" aria-label="Foto 2"></button>
+                <button class="glamp-dot" aria-label="Foto 3"></button>
+              </div>
+            </div>
+
+            <div class="glamp-cards">
+              <article class="glamp-card glamp-card-highlight">
+                <span class="glamp-hot hot-std" data-i18n="glamping_std_hot">Más popular</span>
+                <h4 data-i18n="glamping_std_name">Standard</h4>
+                <p class="glamp-sub" data-i18n="glamping_std_sub">Icónica bell tent pre-montada. Llegas y ya estás en casa.</p>
+
+                <ul class="glamp-feats">
+                  <li data-i18n="glamping_std_feat1">Bell tent pre-montada</li>
+                  <li data-i18n="glamping_std_feat2">Camas individuales con colchón</li>
+                  <li data-i18n="glamping_std_feat3">Ropa de cama completa</li>
+                  <li data-i18n="glamping_std_feat4">Iluminación interior</li>
+                  <li data-i18n="glamping_std_feat5">Alfombra y mesita</li>
+                  <li data-i18n="glamping_std_feat6">Acceso zona glamping</li>
+                </ul>
+
+                <div class="glamp-options">
+                  <div class="glamp-option">
+                    <span><i data-lucide="user"></i> <span data-i18n="glamping_std_2p">2 personas</span></span>
+                    <span data-i18n="glamping_std_2p_price">255€ / persona</span>
+                  </div>
+
+                  <div class="glamp-option">
+                    <span><i data-lucide="users"></i> <span data-i18n="glamping_std_4p">4 personas</span></span>
+                    <span data-i18n="glamping_std_4p_price">245€ / persona</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="glamp-sep"></div>
+
+        <div class="glamp-tier">
+          <div class="glamp-tier-header">
+            <span class="glamp-tier-pill pill-prm" data-i18n="glamping_prm_pill">✦ Glamping Premium</span>
+            <div class="glamp-tier-line"></div>
+            <span class="glamp-tier-desc" data-i18n="glamping_prm_desc">Cúpula · Máximo confort</span>
+          </div>
+
+          <div class="glamp-tier-body">
+
+            <div class="glamp-carousel" id="carousel-prm">
+              <div class="glamp-carousel-track">
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/domo_1.jpg" alt="Glamping Premium — cúpula exterior">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_prm_slide1_title">Cúpula Premium — el festival con otra dimensión</h3>
+                    <p data-i18n="glamping_prm_slide1_text">Espacio, luz natural y las mismas camas que durmieron los atletas en París 2024.</p>
+                  </div>
+                </div>
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/domo_2.jpg" alt="Glamping Premium — colchón olímpico">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_prm_slide2_title">Colchón oficial · París 2024</h3>
+                    <p data-i18n="glamping_prm_slide2_text">El mismo colchón que usaron los atletas olímpicos. Duerme como un campeón.</p>
+                  </div>
+                </div>
+
+                <div class="glamp-carousel-slide">
+                  <img src="assets/img/tiendas/domo_3.jpg" alt="Glamping Premium — detalle interior">
+                  <div class="glamp-carousel-overlay"></div>
+                  <div class="glamp-carousel-label">
+                    <h3 data-i18n="glamping_prm_slide3_title">Cada detalle, pensado para ti</h3>
+                    <p data-i18n="glamping_prm_slide3_text">Mesita, espejo, almacenaje y luz interior. Todo lo que necesitas, nada que sobre.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="glamp-carousel-btn glamp-carousel-prev" aria-label="Foto anterior">
+                <i data-lucide="chevron-left"></i>
+              </button>
+
+              <button class="glamp-carousel-btn glamp-carousel-next" aria-label="Foto siguiente">
+                <i data-lucide="chevron-right"></i>
+              </button>
+
+              <div class="glamp-carousel-dots">
+                <button class="glamp-dot active" aria-label="Foto 1"></button>
+                <button class="glamp-dot" aria-label="Foto 2"></button>
+                <button class="glamp-dot" aria-label="Foto 3"></button>
+              </div>
+            </div>
+
+            <div class="glamp-cards">
+              <article class="glamp-card glamp-card-prm">
+                <span class="glamp-hot hot-prm" data-i18n="glamping_prm_hot">Experiencia completa</span>
+                <h4 data-i18n="glamping_prm_name">Premium</h4>
+                <p class="glamp-sub" data-i18n="glamping_prm_sub">
+                  La mejor manera de vivir el eclipse. Duerme como un atleta olímpico, despierta en el festival.
+                </p>
+
+                <div class="glamp-olympic">
+                  <div class="glamp-olympic-icon">🏅</div>
+                  <div>
+                    <strong data-i18n="glamping_prm_olympic_title">Colchón oficial · París 2024</strong>
+                    <span data-i18n="glamping_prm_olympic_text">El mismo colchón que usaron los atletas en los Juegos Olímpicos de París 2024</span>
+                  </div>
+                </div>
+
+                <ul class="glamp-feats">
+                  <li data-i18n="glamping_prm_feat1">Cúpula pre-montada</li>
+                  <li data-i18n="glamping_prm_feat2">Camas elevadas con colchón olímpico</li>
+                  <li data-i18n="glamping_prm_feat3">Ropa de cama premium</li>
+                  <li data-i18n="glamping_prm_feat4">Luz interior + ventilador</li>
+                  <li data-i18n="glamping_prm_feat5">Mesita, espejo y almacenaje</li>
+                  <li data-i18n="glamping_prm_feat6">Baños exclusivos Premium</li>
+                  <li data-i18n="glamping_prm_feat7">Acceso prioritario al recinto</li>
+                </ul>
+
+                <div class="glamp-options">
+                  <div class="glamp-option">
+                    <span><i data-lucide="user"></i> <span data-i18n="glamping_prm_2p">2 personas</span></span>
+                    <span data-i18n="glamping_prm_2p_price">Por definir</span>
+                  </div>
+
+                  <div class="glamp-option">
+                    <span><i data-lucide="users"></i> <span data-i18n="glamping_prm_4p">4 personas</span></span>
+                    <span data-i18n="glamping_prm_4p_price">Por definir</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="glamp-urgency">
+          <i data-lucide="alert-triangle"></i>
+
+          <div>
+            <strong data-i18n="glamping_urgency_title">Plazas muy limitadas — se agotan cada edición</strong>
+            <p data-i18n="glamping_urgency_text">
+              El glamping siempre vuela. Asegura tu tienda al comprar la entrada y duerme tranquilo (literalmente).
+            </p>
+          </div>
+
+          <a href="index.html#entradas" class="btn btn-primary" style="flex-shrink:0" data-i18n="glamping_urgency_cta">
+            Ver precios y reservar
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
