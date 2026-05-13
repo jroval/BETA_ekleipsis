@@ -9,7 +9,7 @@ if (typeof lucide !== "undefined") {
 
 // ── MENÚ MÓVIL ─────────────────────────────────────────────────
 const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
+const mainNav    = document.getElementById("mainNav");
 
 if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
@@ -23,8 +23,6 @@ if (menuToggle && mainNav) {
   });
 }
 
-
-
 // ── ACORDEÓN PROGRAMA ──────────────────────────────────────────
 document.querySelectorAll(".accordion-btn").forEach((button) => {
   button.addEventListener("click", () => {
@@ -34,14 +32,13 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
 
 // ── MAPA INTERACTIVO ───────────────────────────────────────────
 const mapButtons = document.querySelectorAll(".map-point");
-const mapInfo = document.getElementById("mapInfo");
+const mapInfo    = document.getElementById("mapInfo");
 
 if (mapButtons.length && mapInfo) {
   mapButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const title = button.dataset.title || "";
-      const text = button.dataset.text || "";
-
+      const text  = button.dataset.text  || "";
       mapInfo.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
       mapButtons.forEach((btn) => btn.classList.remove("selected"));
       button.classList.add("selected");
@@ -54,22 +51,21 @@ const langSwitcher = document.querySelector(".language-switcher");
 
 if (langSwitcher) {
   langSwitcher.addEventListener("click", (e) => {
-    if (window.innerWidth > 767) return;
-
+    
+    e.stopPropagation();
     const clickedBtn = e.target.closest(".lang-btn");
     if (!clickedBtn) return;
-
     if (!langSwitcher.classList.contains("open")) {
-      e.stopPropagation();
       langSwitcher.classList.add("open");
-      return;
+    } else {
+      langSwitcher.classList.remove("open");
     }
-
-    langSwitcher.classList.remove("open");
   });
 
-  document.addEventListener("click", () => {
-    langSwitcher.classList.remove("open");
+  document.addEventListener("click", (e) => {
+    if (!langSwitcher.contains(e.target)) {
+      langSwitcher.classList.remove("open");
+    }
   });
 
   if (menuToggle) {
@@ -77,12 +73,4 @@ if (langSwitcher) {
       langSwitcher.classList.remove("open");
     });
   }
-}
-
-// ── SUCCESS FORMULARIOS NETLIFY ────────────────────────────────
-const params = new URLSearchParams(window.location.search);
-const formCard = document.getElementById("formCard");
-
-if (params.get("success") === "true" && formCard) {
-  formCard.classList.add("submitted");
 }

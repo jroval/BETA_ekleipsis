@@ -89,9 +89,9 @@ const translations = {
     ticket_own_tent_4_total: "500€ total · 4 personas",
     ticket_camper_badge:     "Autocaravana o camper",
     ticket_camper_total:     "600€ total · hasta 4 personas",
-    ticket_glamping_4_badge: "Glamping x4",
+    ticket_glamping_4_badge: "Glamping standard",
     ticket_glamping_4_total: "1.020€ total · 4 personas",
-    ticket_glamping_8_badge: "Glamping x8",
+    ticket_glamping_8_badge: "Glamping premium",
     ticket_glamping_8_total: "1.960€ total · 8 personas",
     ticket_family_badge:     "Pack familiar",
     ticket_family_total:     "2 adultos + 1 o 2 niños",
@@ -170,6 +170,26 @@ const translations = {
     glamping_prm_2p_price:     "Por definir",
     glamping_prm_4p:           "4 personas",
     glamping_prm_4p_price:     "Por definir",
+
+    ticket_glamping_std_badge:  "Glamping Standard",
+ticket_glamping_std_4p:     "4 personas",
+ticket_glamping_std_8p:     "8 personas",
+ticket_glamping_std_feat1:  "4 camas",
+ticket_glamping_std_feat2:  "Mesita de noche",
+ticket_glamping_std_feat3:  "Lámpara Fatboy LED Edison",
+ticket_glamping_std_feat4:  "Múltiples tomas de corriente",
+ticket_glamping_std_feat5:  "Alfombra Fatboy",
+ticket_glamping_std_feat6:  "Candado",
+ticket_glamping_prm_badge:  "Glamping Premium",
+ticket_glamping_prm_price:  " /persona",
+ticket_glamping_prm_feat1:  "Camas individuales 80x200 cm con colchón",
+ticket_glamping_prm_feat2:  "Ropa de cama completa",
+ticket_glamping_prm_feat3:  "Mesita de noche",
+ticket_glamping_prm_feat4:  "Lámpara Fatboy LED Edison",
+ticket_glamping_prm_feat5:  "Enchufe múltiple",
+ticket_glamping_prm_feat6:  "Alfombra Fatboy",
+ticket_glamping_prm_feat7:  "Ventilador",
+ticket_glamping_prm_feat8:  "Frigorífico",
 
     glamping_urgency_title: "Plazas muy limitadas — se agotan cada edición",
     glamping_urgency_text:  "El glamping siempre vuela. Asegura tu tienda al comprar la entrada y duerme tranquilo (literalmente).",
@@ -284,9 +304,9 @@ const translations = {
     ticket_own_tent_4_total: "€500 total · 4 people",
     ticket_camper_badge:     "Motorhome or campervan",
     ticket_camper_total:     "€600 total · up to 4 people",
-    ticket_glamping_4_badge: "Glamping x4",
+    ticket_glamping_4_badge: "Glamping standard",
     ticket_glamping_4_total: "€1,020 total · 4 people",
-    ticket_glamping_8_badge: "Glamping x8",
+    ticket_glamping_8_badge: "Glamping premium",
     ticket_glamping_8_total: "€1,960 total · 8 people",
     ticket_family_badge:     "Family pack",
     ticket_family_total:     "2 adults + 1 or 2 children",
@@ -365,6 +385,26 @@ const translations = {
     glamping_prm_2p_price:     "To be announced",
     glamping_prm_4p:           "4 people",
     glamping_prm_4p_price:     "To be announced",
+
+    ticket_glamping_std_badge:  "Standard Glamping",
+ticket_glamping_std_4p:     "4 people",
+ticket_glamping_std_8p:     "8 people",
+ticket_glamping_std_feat1:  "4 beds",
+ticket_glamping_std_feat2:  "Bedside table",
+ticket_glamping_std_feat3:  "Fatboy LED Edison lamp",
+ticket_glamping_std_feat4:  "Multiple power sockets",
+ticket_glamping_std_feat5:  "Fatboy rug",
+ticket_glamping_std_feat6:  "Padlock",
+ticket_glamping_prm_badge:  "Premium Glamping ",
+ticket_glamping_prm_price:  "/people",
+ticket_glamping_prm_feat1:  "Single beds 80x200 cm with mattress",
+ticket_glamping_prm_feat2:  "Full bedding",
+ticket_glamping_prm_feat3:  "Bedside table",
+ticket_glamping_prm_feat4:  "Fatboy LED Edison lamp",
+ticket_glamping_prm_feat5:  "Multi-socket extension",
+ticket_glamping_prm_feat6:  "Fatboy rug",
+ticket_glamping_prm_feat7:  "Fan",
+ticket_glamping_prm_feat8:  "Fridge",
 
     glamping_urgency_title: "Very limited spots — they sell out every edition",
     glamping_urgency_text:  "Glamping always flies. Secure your tent when buying your ticket and sleep easy (literally).",
@@ -479,9 +519,9 @@ const translations = {
     ticket_own_tent_4_total: "500€ total · 4 personnes",
     ticket_camper_badge:     "Camping-car ou van",
     ticket_camper_total:     "600€ total · jusqu'à 4 personnes",
-    ticket_glamping_4_badge: "Glamping x4",
+    ticket_glamping_4_badge: "Glamping standard",
     ticket_glamping_4_total: "1.020€ total · 4 personnes",
-    ticket_glamping_8_badge: "Glamping x8",
+    ticket_glamping_8_badge: "Glamping premium",
     ticket_glamping_8_total: "1.960€ total · 8 personnes",
     ticket_family_badge:     "Pack famille",
     ticket_family_total:     "2 adultes + 1 ou 2 enfants",
@@ -560,6 +600,26 @@ const translations = {
     glamping_prm_2p_price:     "À définir",
     glamping_prm_4p:           "4 personnes",
     glamping_prm_4p_price:     "À définir",
+
+    ticket_glamping_std_badge:  "Glamping Standard",
+ticket_glamping_std_4p:     "4 personnes",
+ticket_glamping_std_8p:     "8 personnes",
+ticket_glamping_std_feat1:  "4 lits",
+ticket_glamping_std_feat2:  "Table de chevet",
+ticket_glamping_std_feat3:  "Lampe Fatboy LED Edison",
+ticket_glamping_std_feat4:  "Prises électriques multiples",
+ticket_glamping_std_feat5:  "Tapis Fatboy",
+ticket_glamping_std_feat6:  "Cadenas",
+ticket_glamping_prm_badge:  "Glamping Premium",
+ticket_glamping_prm_price:  "/personne",
+ticket_glamping_prm_feat1:  "Lits simples 80x200 cm avec matelas",
+ticket_glamping_prm_feat2:  "Literie complète",
+ticket_glamping_prm_feat3:  "Table de chevet",
+ticket_glamping_prm_feat4:  "Lampe Fatboy LED Edison",
+ticket_glamping_prm_feat5:  "Multiprise",
+ticket_glamping_prm_feat6:  "Tapis Fatboy",
+ticket_glamping_prm_feat7:  "Ventilateur",
+ticket_glamping_prm_feat8:  "Réfrigérateur",
 
     glamping_urgency_title: "Places très limitées — elles partent à chaque édition",
     glamping_urgency_text:  "Le glamping s'envole toujours. Sécurisez votre tente en achetant votre billet.",
@@ -674,9 +734,9 @@ const translations = {
     ticket_own_tent_4_total: "500€ gesamt · 4 Personen",
     ticket_camper_badge:     "Wohnmobil oder Camper",
     ticket_camper_total:     "600€ gesamt · bis zu 4 Personen",
-    ticket_glamping_4_badge: "Glamping x4",
+    ticket_glamping_4_badge: "Glamping standard",
     ticket_glamping_4_total: "1.020€ gesamt · 4 Personen",
-    ticket_glamping_8_badge: "Glamping x8",
+    ticket_glamping_8_badge: "Glamping premium",
     ticket_glamping_8_total: "1.960€ gesamt · 8 Personen",
     ticket_family_badge:     "Familienpaket",
     ticket_family_total:     "2 Erwachsene + 1 oder 2 Kinder",
@@ -756,6 +816,26 @@ const translations = {
     glamping_prm_4p:           "4 Personen",
     glamping_prm_4p_price:     "Noch festzulegen",
 
+    ticket_glamping_std_badge:  "Standard Glamping",
+ticket_glamping_std_4p:     "4 Personen",
+ticket_glamping_std_8p:     "8 Personen",
+ticket_glamping_std_feat1:  "4 Betten",
+ticket_glamping_std_feat2:  "Nachttisch",
+ticket_glamping_std_feat3:  "Fatboy LED Edison Lampe",
+ticket_glamping_std_feat4:  "Mehrere Steckdosen",
+ticket_glamping_std_feat5:  "Fatboy Teppich",
+ticket_glamping_std_feat6:  "Schloss",
+ticket_glamping_prm_badge:  "Premium Glamping ",
+ticket_glamping_prm_price:  "/Person",
+ticket_glamping_prm_feat1:  "Einzelbetten 80x200 cm mit Matratze",
+ticket_glamping_prm_feat2:  "Vollständige Bettwäsche",
+ticket_glamping_prm_feat3:  "Nachttisch",
+ticket_glamping_prm_feat4:  "Fatboy LED Edison Lampe",
+ticket_glamping_prm_feat5:  "Mehrfachstecker",
+ticket_glamping_prm_feat6:  "Fatboy Teppich",
+ticket_glamping_prm_feat7:  "Ventilator",
+ticket_glamping_prm_feat8:  "Kühlschrank",
+
     glamping_urgency_title: "Sehr begrenzte Plätze — immer ausverkauft",
     glamping_urgency_text:  "Glamping ist immer schnell weg. Sichere dein Zelt beim Ticketkauf.",
     glamping_urgency_cta:   "Preise sehen und buchen",
@@ -783,6 +863,8 @@ const translations = {
 
     footer_location: "Ekleipsis Fest 2026 · Gargallo, Teruel",
     footer_cta:      "TICKETS KAUFEN"
+
+    
   }
 
 };
@@ -816,36 +898,3 @@ langButtons.forEach((btn) => {
 const savedLanguage = localStorage.getItem("ekleipsisLang") || "es";
 setLanguage(savedLanguage);
 
-/* Selector de idioma desplegable */
-/* Selector de idioma desplegable */
-document.addEventListener("DOMContentLoaded", () => {
-  const languageSwitcher = document.querySelector(".language-switcher");
-  if (!languageSwitcher) return;
-
-  const langButtons = languageSwitcher.querySelectorAll(".lang-btn");
-
-  languageSwitcher.addEventListener("click", (e) => {
-    const clickedButton = e.target.closest(".lang-btn");
-    if (!clickedButton) return;
-
-    e.preventDefault();
-    e.stopPropagation();
-
-    const isOpen = languageSwitcher.classList.contains("open");
-
-    if (!isOpen) {
-      languageSwitcher.classList.add("open");
-      return;
-    }
-
-    langButtons.forEach((btn) => btn.classList.remove("active"));
-    clickedButton.classList.add("active");
-    languageSwitcher.classList.remove("open");
-  });
-
-  document.addEventListener("click", (e) => {
-    if (!languageSwitcher.contains(e.target)) {
-      languageSwitcher.classList.remove("open");
-    }
-  });
-});
