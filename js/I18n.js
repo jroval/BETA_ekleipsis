@@ -79,6 +79,8 @@ const translations = {
     ticket_per_person: "/ persona",
     ticket_total_word: "total",
     ticket_buy:        "COMPRAR ENTRADAS",
+    ticket_glamping_see:     "Ver glamping",
+    ticket_glamping_request: "ENTRADAS BAJO PEDIDO",
 
     ticket_own_tent_2_badge: "Tienda propia x2",
     ticket_own_tent_2_total: "270€ total · 2 personas",
@@ -271,6 +273,8 @@ const translations = {
     ticket_per_person: "/ person",
     ticket_total_word: "total",
     ticket_buy:        "BUY TICKETS",
+    ticket_glamping_see:     "View glamping",
+    ticket_glamping_request: "Tickets on request",
 
     ticket_own_tent_2_badge: "Own tent x2",
     ticket_own_tent_2_total: "€270 total · 2 people",
@@ -463,6 +467,8 @@ const translations = {
     ticket_per_person: "/ personne",
     ticket_total_word: "total",
     ticket_buy:        "ACHETER DES BILLETS",
+    ticket_glamping_see:     "Voir le glamping",
+    ticket_glamping_request: "Billets sur demande",
 
     ticket_own_tent_2_badge: "Tente personnelle x2",
     ticket_own_tent_2_total: "270€ total · 2 personnes",
@@ -655,6 +661,8 @@ const translations = {
     ticket_per_person: "/ Person",
     ticket_total_word: "gesamt",
     ticket_buy:        "TICKETS KAUFEN",
+    ticket_glamping_see:     "Glamping ansehen",
+    ticket_glamping_request: "Tickets auf Anfrage",
 
     ticket_own_tent_2_badge: "Eigenes Zelt x2",
     ticket_own_tent_2_total: "270€ gesamt · 2 Personen",
