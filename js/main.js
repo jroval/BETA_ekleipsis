@@ -30,18 +30,32 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
   });
 });
 
-// ── MAPA INTERACTIVO ───────────────────────────────────────────
-const mapButtons = document.querySelectorAll(".map-point");
-const mapInfo    = document.getElementById("mapInfo");
 
-if (mapButtons.length && mapInfo) {
-  mapButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const title = button.dataset.title || "";
-      const text  = button.dataset.text  || "";
-      mapInfo.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
-      mapButtons.forEach((btn) => btn.classList.remove("selected"));
-      button.classList.add("selected");
+/* ── MAPA INTERACTIVO ───────────────────────────────────── */
+
+const mapPoints = document.querySelectorAll(".map-point");
+const mapInfo = document.getElementById("mapInfo");
+
+if (mapPoints.length && mapInfo) {
+  mapPoints.forEach((point) => {
+    point.addEventListener("click", () => {
+      const title = point.getAttribute("data-title");
+      const text = point.getAttribute("data-text");
+      const img = point.getAttribute("data-img");
+
+      mapPoints.forEach((p) => p.classList.remove("active"));
+      point.classList.add("active");
+
+      mapInfo.innerHTML = `
+        <h3>${title}</h3>
+        <p>${text}</p>
+        <img
+          src="${img}"
+          alt="${title}"
+          class="map-info-img"
+          loading="lazy"
+          decoding="async">
+      `;
     });
   });
 }
