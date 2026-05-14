@@ -1167,6 +1167,17 @@ a { color: inherit; }
 .acceso      { top: 70%; left: 75%; }
 
 .map-info { padding: 28px; min-height: 220px; }
+.map-info-img {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 20px;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.28);
+}
+
 
 /* ── SEGURIDAD ──────────────────────────────────────────────── */
 .warning-grid { display: grid; gap: 16px; margin-top: 30px; }

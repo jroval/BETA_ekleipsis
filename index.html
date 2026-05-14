@@ -666,35 +666,92 @@
 </section>
 
     <!-- MAPA -->
-    <section class="section section-dark" id="mapa">
-      <div class="container">
-        <p class="section-tag">Recinto</p>
-        <h2>Mapa interactivo del festival</h2>
+<section class="section section-dark" id="mapa">
+  <div class="container">
+    <p class="section-tag">Recinto</p>
+    <h2>Mapa interactivo del festival</h2>
 
-        <div class="map-layout">
-          <div class="visual-map">
-            <img src="assets/img/background-map.png" alt="Mapa del festival" class="map-bg" loading="lazy" decoding="async">
+    <div class="map-layout">
 
-            <button class="map-point camping" type="button" data-title="Zona de camping" data-text="Parcelas de 5x7 metros para hasta 4 personas. Espacio para tiendas propias, campers y autocaravanas.">Camping</button>
+      <div class="visual-map">
+        <img src="assets/img/background-map.png"
+             alt="Mapa del festival"
+             class="map-bg"
+             loading="lazy"
+             decoding="async">
 
-            <button class="map-point visionado" type="button" data-title="Zona de visionado" data-text="Área preparada para observar el eclipse total de Sol con explicación guiada y recomendaciones de seguridad.">Visionado</button>
+        <button
+          class="map-point camping"
+          type="button"
+          data-title="Zona de camping"
+          data-text="Parcelas de 5x7 metros para hasta 4 personas. Espacio para tiendas propias, campers y autocaravanas."
+          data-img="assets/img/mapa/camping.png">
+          Camping
+        </button>
 
-            <button class="map-point escenario" type="button" data-title="Escenario principal" data-text="Zona de conciertos, actuaciones de bandas, DJ y eventos musicales nocturnos.">Escenario</button>
+        <button
+          class="map-point visionado"
+          type="button"
+          data-title="Zona de visionado"
+          data-text="Área preparada para observar el eclipse total de Sol con explicación guiada y recomendaciones de seguridad."
+          data-img="assets/img/mapa/visionado.png">
+          Visionado
+        </button>
 
-            <button class="map-point actividades" type="button" data-title="Zona de actividades" data-text="Espacio para talleres de astronomía, actividades familiares, cine del cosmos, catas, agromercado y merchandising.">Actividades</button>
+        <button
+          class="map-point escenario"
+          type="button"
+          data-title="Escenario principal"
+          data-text="Zona de conciertos, actuaciones de bandas, DJ y eventos musicales nocturnos."
+          data-img="assets/img/mapa/escenario.png">
+          Escenario
+        </button>
 
-            <button class="map-point parking" type="button" data-title="Parking" data-text="Parking privado dentro del Festival">Parking</button>
+        <button
+          class="map-point actividades"
+          type="button"
+          data-title="Zona de actividades"
+          data-text="Espacio para talleres de astronomía, actividades familiares, cine del cosmos, catas, agromercado y merchandising."
+          data-img="assets/img/mapa/actividades.png">
+          Actividades
+        </button>
 
-            <button class="map-point acceso" type="button" data-title="Acceso principal" data-text="Entrada principal al recinto del festival.">Acceso principal</button>
-          </div>
+        <button
+          class="map-point parking"
+          type="button"
+          data-title="Parking"
+          data-text="Parking privado dentro del Festival."
+          data-img="assets/img/mapa/parking.png">
+          Parking
+        </button>
 
-          <div class="map-info" id="mapInfo">
-            <h3>Selecciona una zona</h3>
-            <p>Haz clic sobre una zona del mapa para ver información del camping, visionado, escenario o actividades.</p>
-          </div>
-        </div>
+        <button
+          class="map-point acceso"
+          type="button"
+          data-title="Acceso principal"
+          data-text="Entrada principal al recinto del festival."
+          data-img="assets/img/mapa/acceso.jpg">
+          Acceso principal
+        </button>
       </div>
-    </section>
+
+      <div class="map-info" id="mapInfo">
+        <h3>Selecciona una zona</h3>
+
+        <p>
+          Haz clic sobre una zona del mapa para ver información
+          del camping, visionado, escenario o actividades.
+        </p>
+
+        <img
+          src="assets/img/mapa/default.jpg"
+          alt="Mapa interactivo"
+          class="map-info-img">
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- SEGURIDAD -->
     <section class="section section-warning" id="seguridad">
